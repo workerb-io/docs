@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+dist
+.next
+.vscode/
+.DS_Store
+.firebase/
+.firebaserc
+firebase-debug.log
+out

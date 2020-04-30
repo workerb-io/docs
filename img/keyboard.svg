@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="24px" viewBox="0 0 26 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Setup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Documentation-Introduction" transform="translate(-1282.000000, -277.000000)" fill="#1E293B" fill-rule="nonzero">
+            <g id="Group-15" transform="translate(1065.000000, 158.000000)">
+                <g id="Group-13-Copy" transform="translate(170.000000, 88.000000)">
+                    <g id="keyboard-box-fill" transform="translate(45.000000, 28.000000)">
+                        <path d="M3.75,3.75 L26.25,3.75 C26.9403559,3.75 27.5,4.30964406 27.5,5 L27.5,25 C27.5,25.6903559 26.9403559,26.25 26.25,26.25 L3.75,26.25 C3.05964406,26.25 2.5,25.6903559 2.5,25 L2.5,5 C2.5,4.30964406 3.05964406,3.75 3.75,3.75 Z M6.25,8.75 L6.25,11.25 L8.75,11.25 L8.75,8.75 L6.25,8.75 Z M6.25,13.75 L6.25,16.25 L8.75,16.25 L8.75,13.75 L6.25,13.75 Z M6.25,18.75 L6.25,21.25 L23.75,21.25 L23.75,18.75 L6.25,18.75 Z M11.25,13.75 L11.25,16.25 L13.75,16.25 L13.75,13.75 L11.25,13.75 Z M11.25,8.75 L11.25,11.25 L13.75,11.25 L13.75,8.75 L11.25,8.75 Z M16.25,8.75 L16.25,11.25 L18.75,11.25 L18.75,8.75 L16.25,8.75 Z M21.25,8.75 L21.25,11.25 L23.75,11.25 L23.75,8.75 L21.25,8.75 Z M16.25,13.75 L16.25,16.25 L18.75,16.25 L18.75,13.75 L16.25,13.75 Z M21.25,13.75 L21.25,16.25 L23.75,16.25 L23.75,13.75 L21.25,13.75 Z" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
