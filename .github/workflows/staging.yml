@@ -19,6 +19,6 @@ jobs:
     - name: Yarn Export
       run: yarn export
     - name: Firebase Init
-      run: yarn firebase use --token ${{ secrets.STAGING_FIREBASE_TOKEN }} dev-docs-workerb-io
+      run: yarn firebase use --token ${{ secrets.FIREBASE_TOKEN }} dev-docs-workerb-io
     - name: Deploy to Firebase
-      run: yarn firebase deploy -m "Workflow $GITHUB_WORKFLOW, build $GITHUB_RUN_ID" --non-interactive --token ${{ secrets.STAGING_FIREBASE_TOKEN }}
+      run: yarn firebase deploy -m "Workflow $GITHUB_WORKFLOW, build $GITHUB_RUN_ID" --non-interactive --token ${{ secrets.FIREBASE_TOKEN }}
