@@ -2,7 +2,7 @@ name: Build and Deploy Staging
 on: push
 jobs:
   main:
-    name: docs-staging.workerb.io
+    name: docs.workerb.io
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
