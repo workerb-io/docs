@@ -4,6 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import { useRouter } from 'next/router'
 import ReactGA from 'react-ga'
 import SlugHelp from './slughelp';
+import FeedbackBtn from './feedbackbtn';
 
 const DocBox = ({ title, children }) => {
     const router = useRouter();
@@ -25,8 +26,9 @@ const DocBox = ({ title, children }) => {
                         {children}
                     </div>
                 </Col>
-                <Col lg={2} md={3} xs={0}>
+                <Col className='slug_sidebar' lg={2} md={3} xs={0}>
                     <SlugHelp />
+                    {/* <FeedbackBtn/> */}
                 </Col>
             </Row>
         </React.Fragment >

@@ -7,31 +7,41 @@ const INDEX_DATA = [
     },
     {
         id: 2,
-        title: 'Samples',
-        routeName: '/samples',
-        children: null
-    },
-    {
-        id: 3,
-        title: 'Functions',
-        routeName: '/functions',
+        title: 'API Reference',
+        routeName: '/apiref',
         children: [
             {
                 id: 1,
-                title: 'open',
-                routeName: '/open',
+                title: 'Read',
+                routeName: '/read',
+                children: null
             },
             {
                 id: 2,
-                title: 'actions',
-                routeName: '/actions',
+                title: 'Interact',
+                routeName: '/interact',
+                children: null
             },
             {
                 id: 3,
-                title: 'misc',
+                title: 'Network',
+                routeName: '/network',
+                children: null
+            },
+            {
+                id: 4,
+                title: 'Misc',
                 routeName: '/misc',
+                children: null
             },
         ]
-    }
-]
-export default INDEX_DATA;
+    },
+    {
+        id: 3,
+        title: 'Examples',
+        routeName: '/examples',
+        children: null
+    },
+];
+
+module.exports = INDEX_DATA

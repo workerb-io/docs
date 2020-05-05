@@ -4,11 +4,7 @@ import DocBox from '~/components/docbox'
 <div className='right-col-head'>
     <div className="left-head">
         <img src={require('../img/logo.png')} />
-        <h4>Documentation</h4>
-        <p>
-            Get a full overview of the basic settings that will
-            take your search to the next level using workerB.
-        </p>
+        <h4 className='left-head-h4-heading'>Documentation</h4>
     </div>
     <div className='right-head'>
         <div className='doc-head-icon-block'>
@@ -17,20 +13,37 @@ import DocBox from '~/components/docbox'
         </div>
         <div className='doc-head-icon-block'>
             <div className='doc-head-icon down'><img src={require('../img/keyboard.svg')} /></div>
-            <div className='doc-head-icon-detail'>Display/Hide Keyboard</div>
+            <div className='doc-head-icon-detail'>Display/Hide Action bar</div>
         </div>
     </div>
 </div>
+
+<br/><br/><br/>
+<br/>
 <hr/>
 
 #### **Introduction**
+<br/>
 
-**workerB** lets you script browser interactions and execute them as a single action. It aims to boost your productivity and help you get more work done in less time 🚀.
+**workerB** is a browser automation platform. Its goal is to boost user productivity.
 
-**workerB** enables a user to run JaveScript code in browser across DOM models. This means that a user can write business logic which executes across different pages. Hence, a user can encode how she interacts with a site and perform these interactions in a scripted faction. This would save her time & effort. She would need to remember less about the site. Further, she can share the scripted actions with her peers and increase the overall productivity of her team.
+We win when you get more work done with less effort. 🚀🚀
 
-To support this functionality, **workerB** requires with a browser extension to be installed in the browser. The browser extension lets the user type out actions that need to be executed. The browser extension will also execute the JavaScript code for the action in the browser. Only Chrome is supported right now.
+**workerB** has two main components
+* A JavaScript library which mimic user interactions in the browser
+* A runtime which resides outside the webpage but within the browser
 
-**workerB** comes with JaveScript [functions](#functions) which mimic various actions that a user can perform in a browser. The next section goes through some sample scripts to show how such functions can be used.
+With the help of these, you can replace your interactions on any website with a script written in JavaScript. We call these scripts **actions**. The workerB [browser extension](https://chrome.google.com/webstore/devconsole/g05381353403899675261) provides runtime support for executing these actions. 
+
+**workerB** platform comes with the following:
+* Recorder for creating actions
+* Actions management 
+* Teams for sharing actions with your peers. 
+* Tenant support for doing user management and access control. 
+* Library for looking up actions written by others and publishing your own.
+
+In this guide, we cover the following: 
+* [API Reference](/apiref)
+* [Examples](/examples)
 
 </DocBox>

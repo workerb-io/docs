@@ -1,8 +1,8 @@
 import DocBox from '~/components/docbox'
 
-<DocBox title={'workerB | Docs/Samples'}>
+<DocBox title={'workerB | Docs/Examples'}>
 
-### **Samples**
+### **Examples**
 
 #### **cnn**
 

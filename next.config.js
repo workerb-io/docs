@@ -1,6 +1,10 @@
 const rehypePrism = require('@mapbox/rehype-prism');
-const remarkSlug = require('remark-slug')
-const withImages = require('next-images')
+const remarkSlug = require('remark-slug');
+const withImages = require('next-images');
+const IndexData = require('./data/IndexData');
+const routeHandler = require('./utils/routeHandler');
+
+const routes = routeHandler(IndexData);
 
 const withMDX = require('@next/mdx')({
     extension: /\.mdx?$/,
@@ -13,14 +17,15 @@ const withMDX = require('@next/mdx')({
         ]
     }
 });
+
 module.exports = withImages(
     withMDX({
-        exportTrailingSlash: false,
-        exportPathMap: function () {
-            return {
-                '/': { page: '/' }
-            };
-        },
-        pageExtensions: ['js', 'jsx', 'md', 'mdx']
+        exportTrailingSlash: true,
+        exportPathMap: routes,
+        pageExtensions: ['js', 'jsx', 'md', 'mdx'],
+        publicRuntimeConfig:{
+            LOGIN_URL: process.env.LOGIN_URL ? process.env.LOGIN_URL : 'http://localhost:3000',
+            GA_ID: process.env.GA_ID ? process.env.GA_ID : ''
+        }
     })
 );
