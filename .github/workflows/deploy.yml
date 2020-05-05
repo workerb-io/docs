@@ -1,0 +1,22 @@
+name: Build and Deploy
+on:
+  push:
+    branches:
+    - master
+jobs:
+  main:
+    name: docs.workerb.io
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Yarn Install
+      run: yarn install
+    - name: Yarn Build
+      run: yarn build
+    - name: Yarn Export
+      run: yarn export
+    - name: Firebase Init
+      run: yarn firebase use --token $FIREBASE_DEPLOY_KEY dev-docs-workerb-io
+    - name: Deploy to Firebase
+      run: yarn firebase deploy -m "Pipeline $CI_PIPELINE_ID, build $CI_BUILD_ID" --non-interactive --token ${{ secrets.FIREBASE_TOKEN }}
