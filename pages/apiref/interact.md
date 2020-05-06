@@ -8,7 +8,7 @@ import DocBox from '~/components/docbox'
 #### **Options**
 
 Options object is config used by some of the workerB functions to modify the behavior according to the given scenario. An option can consist of
--   `method` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** method used to query the DOM.
+-   `method` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) method used to query the DOM.
     -   `by_text` finds the target element by text value.
     -   `by_regex` finds the target element by regex.
     -   `by_id` finds the target element by id
@@ -17,13 +17,13 @@ Options object is config used by some of the workerB functions to modify the beh
     -   `by_query_selector_all` finds all the elements using a [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
     -   `by_label` finds the target input using a [label](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label). Only works with `type`.
     -   `by_placeholder` finds the target input using a [placeholder](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#htmlattrdefplaceholder). Only works with `type`.
--   `retryDuration` **([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** interval at which the function will try to keep looking for the target element.
+-   `retryDuration` ([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)) interval at which the function will try to keep looking for the target element.
 
--   `numberOfTries` **([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** number of time the function will try to find the element.
+-   `numberOfTries` ([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)) number of time the function will try to find the element.
 
--   `expectReload` **([Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean))** if set to true the script will pause the execution after successful exit of the function because the page is about to reload. Only works with `submit` and `click`
+-   `expectReload` ([Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)) if set to true the script will pause the execution after successful exit of the function because the page is about to reload. Only works with `submit` and `click`
 
--   `path` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target element in the DOM. Only works with `type`.
+-   `path` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target element in the DOM. Only works with `type`.
 
 
 
@@ -33,7 +33,7 @@ Options object is config used by some of the workerB functions to modify the beh
 
 **Arguments**
 
--   `URL` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** link to open
+-   `URL` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) link to open
 
 **Example**
 
@@ -47,7 +47,7 @@ Options object is config used by some of the workerB functions to modify the beh
 
 **Arguments**
 
--   `URL` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** link to open
+-   `URL` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) link to open
 
 **Example**
 
@@ -61,11 +61,11 @@ Options object is config used by some of the workerB functions to modify the beh
 
 **Arguments**
 
--   `path` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target element in the DOM.
--   `options` **([Options](#options))** the options object.
--   `eventConfig` **([Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object))** an object to customize event. It can consist of 
-    - `eventType` **([Event type](https://developer.mozilla.org/en-US/docs/Web/API/Event/type))** the event name
-    - `eventProps` **([KeyboardEventInit](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/KeyboardEvent))** options for event.
+-   `path` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target element in the DOM.
+-   `options` ([Options](#options)) the options object.
+-   `eventConfig` ([Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object)) an object to customize event. It can consist of 
+    - `eventType` ([Event type](https://developer.mozilla.org/en-US/docs/Web/API/Event/type)) the event name
+    - `eventProps` ([KeyboardEventInit](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/KeyboardEvent)) options for event.
 
 **Example**
 
@@ -83,8 +83,8 @@ Options object is config used by some of the workerB functions to modify the beh
 
 **Arguments**
 
--   `value` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target element in the DOM.
--   `options` **([Options](#options))** the options object.
+-   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target element in the DOM.
+-   `options` ([Options](#options)) the options object.
 
 **Example**
 
@@ -105,10 +105,10 @@ Options object is config used by some of the workerB functions to modify the beh
 
 **Arguments**
 
--   `text` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value that should be written to a target input field.
--   `path` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target element in the DOM.
--   `options` **([Options](#options))** the options object.
-    -   **If no path is provided in options config by default query fallback to label first if element not found then the function checks for placeholder**
+-   `text` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value that should be written to a target input field.
+-   `path` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target element in the DOM.
+-   `options` ([Options](#options)) the options object.
+    -   If no path is provided in options config by default query fallback to label first if element not found then the function checks for placeholder
 
 **Example**
 
@@ -125,8 +125,8 @@ Options object is config used by some of the workerB functions to modify the beh
 
 **Arguments**
 
--   `value` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target input field in the DOM.
--   `options` **([Options](#options))** the options object.
+-   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target input field in the DOM.
+-   `options` ([Options](#options)) the options object.
 
 `submit` can be called without any arguments as well. In this case, the enter keypress event would be generated for the element with focus.
 

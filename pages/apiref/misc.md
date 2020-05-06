@@ -10,11 +10,11 @@ import DocBox from '~/components/docbox'
 
 **Arguments**
 
--   `message` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used as notification message.
--   `type` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used as notification type. Notification can be of two type
+-   `message` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used as notification message.
+-   `type` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used as notification type. Notification can be of two type
     -   success
     -   error
--   `timeout` **([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number))** value used as duration till the notification will be shown.
+-   `timeout` ([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)) value used as duration till the notification will be shown.
 
 **Example**
 
@@ -29,8 +29,8 @@ import DocBox from '~/components/docbox'
 
 **Arguments**
 
--   `message` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value to display in log.
--   `color` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value to be used as the color of log.
+-   `message` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value to display in log.
+-   `color` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value to be used as the color of log.
 
 **Example**
 
