@@ -9,12 +9,12 @@ import DocBox from '~/components/docbox'
 
 **Arguments**
 
--   `value` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target input field in the DOM.
--   `options` **([Options](#options))** the options object.
+-   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target input field in the DOM.
+-   `options` ([Options](#options)) the options object.
 
 **Return**
 
--   `text` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** text inside an element or in case of input the value of the input.
+-   `text` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) text inside an element or in case of input the value of the input.
 
 **Example**
 
@@ -30,12 +30,12 @@ import DocBox from '~/components/docbox'
 
 **Arguments**
 
--   `value` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target input field in the DOM.
--   `options` **([Options](#options))** the options object.
+-   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target input field in the DOM.
+-   `options` ([Options](#options)) the options object.
 
 **Return**
 
--   `text` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** stringified array of all the elements text.
+-   `text` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) stringified array of all the elements text.
 
 **Example**
 
@@ -49,14 +49,14 @@ import DocBox from '~/components/docbox'
 
 **Arguments**
 
--   `value` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target element in the DOM.
--   `options` **([Options](#options))** the options object.
+-   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target element in the DOM.
+-   `options` ([Options](#options)) the options object.
 
 **Return**
 
--   `response` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))** stringified version of an object which has two properties
-    -   `header` **([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))** Array of strings which contains all the heading for columns
-    -   `rows` **([Array](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status))** - Array of object where every key of a single object corresponds to a header from the header array. If `readTable` is not able to identify the correct column instead of using a column as a key `column{index}` will be used.
+-   `response` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)) stringified version of an object which has two properties
+    -   `header` ([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)) Array of strings which contains all the heading for columns
+    -   `rows` ([Array](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status)) - Array of object where every key of a single object corresponds to a header from the header array. If `readTable` is not able to identify the correct column instead of using a column as a key `column{index}` will be used.
 
 **Example**
 
@@ -74,7 +74,7 @@ import DocBox from '~/components/docbox'
 
 **Return**
 
--   `url` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** current page url.
+-   `url` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) current page url.
 
 **Example**
 
@@ -91,19 +91,19 @@ import DocBox from '~/components/docbox'
 
 **Arguments**
 
--   `attributes` (**([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))**|**([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))**) a single attribute or attribute array of which we want to get value of.
-- `path` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** value used to identify the target element in the DOM.
--   `options` **([Options](#options))** the options object.
+-   `attributes` (([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))|([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))) a single attribute or attribute array of which we want to get value of.
+- `path` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target element in the DOM.
+-   `options` ([Options](#options)) the options object.
 
 **Return**
 
 if there is only one element found with the given path
 
-- `attributesValues` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** either a single string containing the value of the attribute or if multiple attributes are requested then a stringified version of an object with all attributes.
+- `attributesValues` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) either a single string containing the value of the attribute or if multiple attributes are requested then a stringified version of an object with all attributes.
 
 if multiple elements found
 
-- `response` **([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))** Array of `attributesValues`
+- `response` ([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array)) Array of `attributesValues`
 
 **Example**
 
@@ -119,9 +119,9 @@ if multiple elements found
 
 **Arguments**
 
--   `filename` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** name of the file.
--   `content` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** content of the file.
--   `contentType` **([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))** contentType of file. It can be either
+-   `filename` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) name of the file.
+-   `content` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) content of the file.
+-   `contentType` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) contentType of file. It can be either
     - `text` for text files
     - Any valid mime type for e.g `text/plain;charset=utf-8,`
 
