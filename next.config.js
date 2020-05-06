@@ -21,9 +21,11 @@ const withMDX = require('@next/mdx')({
 module.exports = withImages(
     withMDX({
         exportTrailingSlash: true,
-        exportPathMap: routes,
+        exportPathMap: () => {
+            return routes
+        },
         pageExtensions: ['js', 'jsx', 'md', 'mdx'],
-        publicRuntimeConfig:{
+        publicRuntimeConfig: {
             LOGIN_URL: process.env.LOGIN_URL ? process.env.LOGIN_URL : 'http://localhost:3000',
             GA_ID: process.env.GA_ID ? process.env.GA_ID : ''
         }
