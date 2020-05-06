@@ -2,8 +2,8 @@
 
 ## To run the doc server locally, run the following steps: 
 1. yarn install
-2. yarn start
-3. open http://localhost:3000/ in browser
+2. yarn dev
+3. open http://localhost:4000/ in browser
 
 
 ## To make a change to the documentation: 
