@@ -109,17 +109,32 @@ body {
                             min-height: 40px;
                             line-height: 40px;
                             padding: 0 1rem;
+                            display: flex;
+                            justify-content: space-between;
                             text-overflow: ellipsis;
                             border-left: 4px solid transparent;
                             &:hover {
                                 background: #fb842521 !important;
                                 border-left: 4px solid $torange;
                             }
+                            .dd_ico{
+                                transition: transform 0.25s ease-out;
+                                img:hover{
+                                    background: white;
+                                    border-radius: 0.2rem;
+                                }
+                            }
+                            .dd_ico_rotate{
+                                transform: rotate3d(1, 0, 0, 180deg);
+                            }
                         }
                         .list_child {
                             list-style: none;
                             padding-left: 0;
                             margin: 0;
+                            overflow: hidden;
+                            max-height: 20rem;
+                            transition: all 1s ease-in-out;
                             .list_child_items {
                                 min-height: 40px;
                                 line-height: 40px;
@@ -131,6 +146,10 @@ body {
                                     border-left: 4px solid $torange;
                                 }
                             }
+                        }
+                        .list_child.collapsed{
+                            max-height:0;
+                            transition: all 0.55s cubic-bezier(0, 1.06, 1, 1);
                         }
                     }
                 }
