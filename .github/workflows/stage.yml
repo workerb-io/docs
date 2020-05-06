@@ -12,7 +12,7 @@ jobs:
     - name: Setup Environment
       run: |
         touch .env
-        echo 'LOGIN_URL = ${{ secrets.STAGE_LOGIN_URL }} > .env
+        echo 'LOGIN_URL = ${{ secrets.STAGE_LOGIN_URL }}' > .env
         echo 'GA_ID = ${{ secrets.STAGE_GA_ID }}' >> .env
     - name: Yarn Build
       run: yarn build

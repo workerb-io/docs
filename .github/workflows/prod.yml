@@ -15,7 +15,7 @@ jobs:
     - name: Setup Environment
       run: |
         touch .env
-        echo 'LOGIN_URL = ${{ secrets.PROD_LOGIN_URL }} > .env
+        echo 'LOGIN_URL = ${{ secrets.PROD_LOGIN_URL }}' > .env
         echo 'GA_ID = ${{ secrets.PROD_GA_ID }}' >> .env
     - name: Yarn Build
       run: yarn build
