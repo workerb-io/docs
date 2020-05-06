@@ -28,7 +28,7 @@ const DocBox = ({ title, children }) => {
                 </Col>
                 <Col className='slug_sidebar' lg={2} md={3} xs={0}>
                     <SlugHelp />
-                    {/* <FeedbackBtn/> */}
+                    <FeedbackBtn />
                 </Col>
             </Row>
         </React.Fragment >
