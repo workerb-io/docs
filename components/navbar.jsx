@@ -11,15 +11,13 @@ export const Navbar = () => {
     return (
         <div className="navbar">
             <div className="logo">
-                <Link href="/" as="/">
-                    <a>
-                        <WorkerBFull />
-                    </a>
-                </Link>
+                <a href="https://workerb.io">
+                    <WorkerBFull />
+                </a>
             </div>
 
             <span className="buttons-group">
-                <a className="login-group" href={FE_URL + "/libraries"} rel="noreferrer">
+                <a className="login-group" href={FE_URL + "libraries"} rel="noreferrer">
                     <span className="login-button">
                         <LibrariesIcon />
                     </span>
@@ -27,7 +25,7 @@ export const Navbar = () => {
                     <span className="login-text">Libraries</span>
                 </a>
 
-                <a className="login-group" href={FE_URL + "/login"} rel="noreferrer">
+                <a className="login-group" href={FE_URL + "login"} rel="noreferrer">
                     <span className="login-button">
                         <LoginIcon />
                     </span>
