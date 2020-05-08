@@ -33,7 +33,7 @@ export const Navbar = () => {
             </div>
 
             <span className="buttons-group">
-                <a className="login-group" href={librariesUrl} target="_blank" rel="noreferrer">
+                <a className="login-group" href={librariesUrl} rel="noreferrer">
                     <span className="login-button">
                         <LibrariesIcon />
                     </span>
@@ -41,7 +41,7 @@ export const Navbar = () => {
                     <span className="login-text">Libraries</span>
                 </a>
 
-                <a className="login-group" href={LOGIN_URL} target="_blank" rel="noreferrer">
+                <a className="login-group" href={LOGIN_URL} rel="noreferrer">
                     <span className="login-button">
                         <LoginIcon />
                     </span>
