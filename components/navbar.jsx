@@ -5,23 +5,9 @@ import React, { useEffect, useState } from 'react'
 import WorkerBFull from './workerb'
 
 const { publicRuntimeConfig } = getConfig()
-const { LOGIN_URL } = publicRuntimeConfig
+const { FE_URL } = publicRuntimeConfig
 
 export const Navbar = () => {
-    const [librariesUrl, setLibrariesUrl] = useState('#')
-
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            if (window.location.hostname === 'docs.workerb.io') {
-                setLibrariesUrl('https://workerb.app/libraries')
-            } else if (window.location.hostname === 'docs-staging.workerb.io') {
-                setLibrariesUrl('https://app-staging.workerb.io/libraries')
-            } else {
-                setLibrariesUrl('http://localhost:3000/libraries')
-            }
-        }
-    }, [])
-
     return (
         <div className="navbar">
             <div className="logo">
@@ -33,7 +19,7 @@ export const Navbar = () => {
             </div>
 
             <span className="buttons-group">
-                <a className="login-group" href={librariesUrl} rel="noreferrer">
+                <a className="login-group" href={FE_URL + "/libraries"} rel="noreferrer">
                     <span className="login-button">
                         <LibrariesIcon />
                     </span>
@@ -41,7 +27,7 @@ export const Navbar = () => {
                     <span className="login-text">Libraries</span>
                 </a>
 
-                <a className="login-group" href={LOGIN_URL} rel="noreferrer">
+                <a className="login-group" href={FE_URL + "/login"} rel="noreferrer">
                     <span className="login-button">
                         <LoginIcon />
                     </span>
