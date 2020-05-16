@@ -119,10 +119,6 @@ body {
                             }
                             .dd_ico{
                                 transition: transform 0.25s ease-out;
-                                img:hover{
-                                    background: white;
-                                    border-radius: 0.2rem;
-                                }
                             }
                             .dd_ico_rotate{
                                 transform: rotate3d(1, 0, 0, 180deg);
