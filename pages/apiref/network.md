@@ -3,7 +3,6 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/Network'}>
 
 ### **Network**
-
 <br/>
 <hr/>
 

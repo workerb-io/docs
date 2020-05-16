@@ -2,7 +2,9 @@ import DocBox from '~/components/docbox'
 
 <DocBox title={'workerB | Docs/API'}>
 
-### **API Reference**
+### **Miscellaneous**
+<br/>
+<hr/>
 
 #### **notify**
 

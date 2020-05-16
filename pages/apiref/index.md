@@ -3,6 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API'}>
 
 ### **API Reference**
+<br/>
+<hr/>
 
 **workerB** comes with a JavaScript library of functions. These functions can be used to read, interact or make network calls. Together these functions help the user to script any actions that can replace anything that the user might have done manually. 
 
