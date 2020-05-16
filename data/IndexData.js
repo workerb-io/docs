@@ -24,8 +24,26 @@ const INDEX_DATA = [
             },
             {
                 id: 3,
-                title: 'Network',
-                routeName: '/network',
+                title: 'httpGet',
+                routeName: '/httpGet',
+                children: null
+            },
+            {
+                id: 4,
+                title: 'httpPost',
+                routeName: '/httpPost',
+                children: null
+            },
+            {
+                id: 5,
+                title: 'httpDelete',
+                routeName: '/httpDelete',
+                children: null
+            },
+            {
+                id: 6,
+                title: 'httpPut',
+                routeName: '/httpPut',
                 children: null
             },
             {
