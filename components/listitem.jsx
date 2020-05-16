@@ -4,22 +4,21 @@ import Link from 'next/link'
 export const ListItem = ({ title, routeName, children }) => {
 
     const dropdownHandler = (e) => {
-        e.preventDefault();
-
-        let ele = e.target;
-        ele.classList.toggle('dd_ico_rotate');
+        let ele = e.currentTarget;
+        
         ele.closest('.list_items').lastChild.classList.toggle('collapsed');
+        if (ele.children[1]) ele.children[1].classList.toggle('dd_ico_rotate');
     }
 
     return (
         <li className='list_items'>
             <Link href={routeName}>
                 <a>
-                    <div className="list_title">
+                    <div className="list_title"  onClick={dropdownHandler}>
                         <span>{title}</span>
                         {children ?
                             (
-                                <span className='dd_ico' onClick={dropdownHandler}>
+                                <span className='dd_ico'>
                                     <img src={require('../img/dropdown.svg')} />
                                 </span>
                             ) : null
