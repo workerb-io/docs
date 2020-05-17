@@ -18,40 +18,77 @@ const INDEX_DATA = [
             },
             {
                 id: 2,
-                title: 'Interact',
-                routeName: '/interact',
-                children: null
-            },
-            {
-                id: 3,
                 title: 'httpGet',
                 routeName: '/httpGet',
                 children: null
             },
             {
-                id: 4,
+                id: 3,
                 title: 'httpPost',
                 routeName: '/httpPost',
                 children: null
             },
             {
-                id: 5,
+                id: 4,
                 title: 'httpDelete',
                 routeName: '/httpDelete',
                 children: null
             },
             {
-                id: 6,
+                id: 5,
                 title: 'httpPut',
                 routeName: '/httpPut',
                 children: null
             },
             {
-                id: 4,
+                id: 6,
                 title: 'Misc',
                 routeName: '/misc',
                 children: null
             },
+            {
+                id: 7,
+                title: 'Options',
+                routeName: '/options',
+                children: null
+            },
+            {
+                id: 8,
+                title: 'Open',
+                routeName: '/open',
+                children: null
+            },
+            {
+                id: 9,
+                title: 'Tab',
+                routeName: '/tab',
+                children: null
+            },
+            {
+                id: 10,
+                title: 'Click',
+                routeName: '/click',
+                children: null
+            },
+            {
+                id: 11,
+                title: 'Event',
+                routeName: '/event',
+                children: null
+            },
+            {
+                id: 12,
+                title: 'Type',
+                routeName: '/type',
+                children: null
+            },
+            {
+                id: 13,
+                title: 'Submit',
+                routeName: '/submit',
+                children: null
+            },
+            
         ]
     },
     {
