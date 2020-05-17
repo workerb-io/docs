@@ -2,7 +2,7 @@ import DocBox from '~/components/docbox'
 
 <DocBox title={'workerB | Docs/API Reference/submit'}>
 
-### **Submit**
+### **submit**
 <br/>
 <hr/>
 
