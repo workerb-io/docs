@@ -30,7 +30,7 @@ export const ListItem = ({ title, routeName, children }) => {
                 (
                     <ul className='list_child collapsed' >
                         {children
-                            .sort(function (a, b) {
+                            .sort((a, b) => {
                                 let titleA = a.title;
                                 let titleB = b.title;
                                 if (titleA < titleB) {
