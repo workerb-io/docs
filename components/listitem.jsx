@@ -5,7 +5,7 @@ export const ListItem = ({ title, routeName, children }) => {
 
     const dropdownHandler = (e) => {
         let ele = e.currentTarget;
-        
+
         ele.closest('.list_items').lastChild.classList.toggle('collapsed');
         if (ele.children[1]) ele.children[1].classList.toggle('dd_ico_rotate');
     }
@@ -14,7 +14,7 @@ export const ListItem = ({ title, routeName, children }) => {
         <li className='list_items'>
             <Link href={routeName}>
                 <a>
-                    <div className="list_title"  onClick={dropdownHandler}>
+                    <div className="list_title" onClick={dropdownHandler}>
                         <span>{title}</span>
                         {children ?
                             (
@@ -30,6 +30,17 @@ export const ListItem = ({ title, routeName, children }) => {
                 (
                     <ul className='list_child collapsed' >
                         {children
+                            .sort(function (a, b) {
+                                let titleA = a.title;
+                                let titleB = b.title;
+                                if (titleA < titleB) {
+                                    return -1;
+                                }
+                                if (titleA > titleB) {
+                                    return 1;
+                                }
+                                return 0;
+                            })
                             .map(e =>
                                 <Link key={e.id} href={`${routeName}` + `${e.routeName}`}>
                                     <li className='list_child_items'>{e.title}</li>
