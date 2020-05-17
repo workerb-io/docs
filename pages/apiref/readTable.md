@@ -1,12 +1,10 @@
 import DocBox from '~/components/docbox'
 
-<DocBox title={'workerB | Docs/API Reference/read'}>
+<DocBox title={'workerB | Docs/API Reference/readTable'}>
 
 ### **readTable**
 <br/>
 <hr/>
-
-#### **readTable**
 
 `readTable` is used to read the content of a table.
 

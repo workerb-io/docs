@@ -1,6 +1,6 @@
 import DocBox from '~/components/docbox'
 
-<DocBox title={'workerB | Docs/API'}>
+<DocBox title={'workerB | Docs/API Reference '}>
 
 ### **API Reference**
 <br/>

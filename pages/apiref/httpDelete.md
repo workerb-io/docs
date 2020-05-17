@@ -5,6 +5,7 @@ import DocBox from '~/components/docbox'
 ### **httpDelete**
 <br/>
 <hr/>
+
 `httpDelete` is used to make http `DELETE` requests.
 
 **Arguments**

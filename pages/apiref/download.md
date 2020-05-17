@@ -1,6 +1,6 @@
 import DocBox from '~/components/docbox'
 
-<DocBox title={'workerB | Docs/API Reference/read'}>
+<DocBox title={'workerB | Docs/API Reference/download'}>
 
 ### **download**
 <br/>
