@@ -2,11 +2,11 @@ import DocBox from '~/components/docbox'
 
 <DocBox title={'workerB | Docs/API Reference/read'}>
 
-### **read**
+### **readAll**
 <br/>
 <hr/>
 
-`read` is used to get text of an element.
+`readAll` is used to get text of all the element matching given path.
 
 **Arguments**
 
@@ -15,14 +15,12 @@ import DocBox from '~/components/docbox'
 
 **Return**
 
--   `text` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) text inside an element or in case of input the value of the input.
+-   `text` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) stringified array of all the elements text.
 
 **Example**
 
 ```javascript
-1 read('#workerB_Input', {
-2       method: 'by_query_selector'
-3 })
+1 readAll('.all_titles')
 ```
 
 </DocBox>

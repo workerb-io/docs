@@ -12,84 +12,114 @@ const INDEX_DATA = [
         children: [
             {
                 id: 1,
-                title: 'Read',
+                title: 'read',
                 routeName: '/read',
                 children: null
             },
             {
                 id: 2,
+                title: 'readAll',
+                routeName: '/readAll',
+                children: null
+            },
+            {
+                id: 3,
+                title: 'readTable',
+                routeName: '/readTable',
+                children: null
+            },
+            {
+                id: 4,
+                title: 'readURL',
+                routeName: '/readURL',
+                children: null
+            },
+            {
+                id: 5,
+                title: 'getAttribute',
+                routeName: '/getAttribute',
+                children: null
+            },
+            {
+                id: 6,
+                title: 'download',
+                routeName: '/download',
+                children: null
+            },
+            {
+                id: 7,
                 title: 'httpGet',
                 routeName: '/httpGet',
                 children: null
             },
             {
-                id: 3,
+                id: 8,
                 title: 'httpPost',
                 routeName: '/httpPost',
                 children: null
             },
             {
-                id: 4,
+                id: 9,
                 title: 'httpDelete',
                 routeName: '/httpDelete',
                 children: null
             },
             {
-                id: 5,
+                id: 10,
                 title: 'httpPut',
                 routeName: '/httpPut',
                 children: null
             },
             {
-                id: 6,
+                id: 11,
                 title: 'notify',
                 routeName: '/notify',
                 children: null
             },
             {
-                id: 7,
+                id: 12,
                 title: 'log',
                 routeName: '/log',
                 children: null
             },
             {
-                id: 8,
+                id: 13,
                 title: 'options',
                 routeName: '/options',
                 children: null
             },
             {
-                id: 9,
+                id: 14,
                 title: 'open',
                 routeName: '/open',
                 children: null
             },
             {
-                id: 10,
+                id: 15,
                 title: 'tab',
                 routeName: '/tab',
                 children: null
             },
             {
-                id: 11,
+                id: 16,
                 title: 'click',
                 routeName: '/click',
                 children: null
             },
             {
-                id: 12,
+                id: 17,
                 title: 'event',
                 routeName: '/event',
                 children: null
             },
             {
-                id: 13,
+                id: 18,
                 title: 'type',
                 routeName: '/type',
                 children: null
             },
             {
-                id: 14,
+                id: 19,
                 title: 'submit',
                 routeName: '/submit',
                 children: null
