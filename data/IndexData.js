@@ -42,48 +42,54 @@ const INDEX_DATA = [
             },
             {
                 id: 6,
-                title: 'misc',
-                routeName: '/misc',
+                title: 'notify',
+                routeName: '/notify',
                 children: null
             },
             {
                 id: 7,
+                title: 'log',
+                routeName: '/log',
+                children: null
+            },
+            {
+                id: 8,
                 title: 'options',
                 routeName: '/options',
                 children: null
             },
             {
-                id: 8,
+                id: 9,
                 title: 'open',
                 routeName: '/open',
                 children: null
             },
             {
-                id: 9,
+                id: 10,
                 title: 'tab',
                 routeName: '/tab',
                 children: null
             },
             {
-                id: 10,
+                id: 11,
                 title: 'click',
                 routeName: '/click',
                 children: null
             },
             {
-                id: 11,
+                id: 12,
                 title: 'event',
                 routeName: '/event',
                 children: null
             },
             {
-                id: 12,
+                id: 13,
                 title: 'type',
                 routeName: '/type',
                 children: null
             },
             {
-                id: 13,
+                id: 14,
                 title: 'submit',
                 routeName: '/submit',
                 children: null
