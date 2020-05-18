@@ -41,8 +41,8 @@ export const ListItem = ({ title, routeName, children }) => {
                                 }
                                 return 0;
                             })
-                            .map(e =>
-                                <Link key={e.id} href={`${routeName}` + `${e.routeName}`}>
+                            .map((e, i) =>
+                                <Link key={i} href={`${routeName}` + `${e.routeName}`}>
                                     <li className='list_child_items'>{e.title}</li>
                                 </Link>
                             )
