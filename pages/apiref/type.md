@@ -15,6 +15,10 @@ import DocBox from '~/components/docbox'
 -   `options` ([Options](#options)) the options object.
     -   If no path is provided in options config by default query fallback to label first if element not found then the function checks for placeholder
 
+**Return**
+
+null
+
 **Example**
 
 ```javascript

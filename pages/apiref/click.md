@@ -13,6 +13,10 @@ import DocBox from '~/components/docbox'
 -   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target element in the DOM.
 -   `options` ([Options](#options)) the options object.
 
+**Return**
+
+null
+
 **Example**
 
 ```javascript

@@ -16,6 +16,10 @@ import DocBox from '~/components/docbox'
     -   error
 -   `timeout` ([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)) value used as duration till the notification will be shown.
 
+**Return**
+
+null
+
 **Example**
 
 ```javascript

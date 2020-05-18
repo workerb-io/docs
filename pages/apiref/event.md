@@ -16,6 +16,10 @@ import DocBox from '~/components/docbox'
     - `eventType` ([Event type](https://developer.mozilla.org/en-US/docs/Web/API/Event/type)) the event name
     - `eventProps` ([KeyboardEventInit](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/KeyboardEvent)) options for event.
 
+**Return**
+
+null
+
 **Example**
 
 ```javascript

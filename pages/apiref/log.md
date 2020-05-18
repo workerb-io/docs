@@ -13,6 +13,10 @@ import DocBox from '~/components/docbox'
 -   `message` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value to display in log.
 -   `color` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value to be used as the color of log.
 
+**Return**
+
+null
+
 **Example**
 
 ```javascript

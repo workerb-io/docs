@@ -90,7 +90,7 @@ body {
             .sidenav_container {
                 color: $tblue;
                 height: 87vh;
-                overflow-y: scroll;
+                overflow-y: auto;
                 padding: 10px 0;
                 border-right: 1px solid $tblue;
                 position: sticky;

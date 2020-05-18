@@ -12,6 +12,10 @@ import DocBox from '~/components/docbox'
 
 -   `URL` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) link to open
 
+**Return**
+
+null
+
 **Example**
 
 ```javascript

@@ -16,6 +16,10 @@ import DocBox from '~/components/docbox'
     - `text` for text files
     - Any valid mime type for e.g `text/plain;charset=utf-8,`
 
+**Return**
+
+null
+
 **Example**
 
 ```javascript

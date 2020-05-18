@@ -6,7 +6,7 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`submit` is used for simulating the enter keypress event in a form element. This can result in the submittion of the parent form.
+`submit` is used for simulating the enter keypress event in a form element. This can result in the submission of the parent form.
 
 **Arguments**
 
@@ -14,6 +14,10 @@ import DocBox from '~/components/docbox'
 -   `options` ([Options](#options)) the options object.
 
 `submit` can be called without any arguments as well. In this case, the enter keypress event would be generated for the element with focus.
+
+**Return**
+
+null
 
 **Example**
 
