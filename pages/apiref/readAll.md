@@ -11,7 +11,7 @@ import DocBox from '~/components/docbox'
 **Arguments**
 
 -   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target input field in the DOM.
--   `options` ([Options](#options)) the options object.
+-   `options` the options object.
 
 **Return**
 

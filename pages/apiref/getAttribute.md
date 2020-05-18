@@ -12,7 +12,7 @@ import DocBox from '~/components/docbox'
 
 -   `attributes` (([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String))|([Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array))) a single attribute or attribute array of which we want to get value of.
 - `path` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target element in the DOM.
--   `options` ([Options](#options)) the options object.
+-   `options` the options object.
 
 **Return**
 
