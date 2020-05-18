@@ -86,70 +86,73 @@ body {
         padding: 1.5rem 0;
         .documentation_box.row {
             position: relative;
+            width: 100%;
             .sidenav_container {
                 color: $tblue;
                 height: 87vh;
+                overflow-y: auto;
                 padding: 10px 0;
                 border-right: 1px solid $tblue;
                 position: sticky;
                 top: 11.1vh;
-                .sidenav {
-                    font-weight: 500;
-                    a {
-                        color: $tblue;
-                        text-decoration: none;
-                    }
-                    .list_items {
-                        list-style: none;
-                        margin-top: 4px;
-                        margin-bottom: 4px;
-                        font-size: 14px;
-                        cursor: pointer;
-                        .list_title {
-                            min-height: 40px;
-                            line-height: 40px;
-                            padding: 0 1rem;
-                            display: flex;
-                            justify-content: space-between;
-                            text-overflow: ellipsis;
-                            border-left: 4px solid transparent;
-                            &:hover {
-                                background: #fb842521 !important;
-                                border-left: 4px solid $torange;
-                            }
-                            .dd_ico{
-                                transition: transform 0.25s ease-out;
-                                img:hover{
-                                    background: white;
-                                    border-radius: 0.2rem;
-                                }
-                            }
-                            .dd_ico_rotate{
-                                transform: rotate3d(1, 0, 0, 180deg);
-                            }
+                .row{
+                    margin: 0;
+                    width: 100%;
+                    .sidenav {
+                        padding: 0;
+                        font-weight: 500;
+                        a {
+                            color: $tblue;
+                            text-decoration: none;
                         }
-                        .list_child {
+                        .list_items {
                             list-style: none;
-                            padding-left: 0;
-                            margin: 0;
-                            overflow: hidden;
-                            max-height: 20rem;
-                            transition: all 1s ease-in-out;
-                            .list_child_items {
+                            margin-top: 4px;
+                            margin-bottom: 4px;
+                            font-size: 14px;
+                            cursor: pointer;
+                            .list_title {
                                 min-height: 40px;
                                 line-height: 40px;
-                                padding: 0 2rem;
-                                cursor: pointer;
+                                padding: 0 1rem;
+                                display: flex;
+                                justify-content: space-between;
+                                text-overflow: ellipsis;
                                 border-left: 4px solid transparent;
                                 &:hover {
                                     background: #fb842521 !important;
                                     border-left: 4px solid $torange;
                                 }
+                                .dd_ico{
+                                    transition: transform 0.25s ease-out;
+                                }
+                                .dd_ico_rotate{
+                                    transform: rotate3d(1, 0, 0, 180deg);
+                                }
                             }
-                        }
-                        .list_child.collapsed{
-                            max-height:0;
-                            transition: all 0.55s cubic-bezier(0, 1.06, 1, 1);
+                            .list_child {
+                                list-style: none;
+                                padding-left: 0;
+                                margin: 0;
+                                overflow: hidden;
+                                max-height: 100vh;
+                                transition: all 1s ease-in-out;
+                                .list_child_items {
+                                    min-height: 40px;
+                                    line-height: 40px;
+                                    padding: 0 2rem;
+                                    cursor: pointer;
+                                    border-left: 4px solid transparent;
+                                    &:hover {
+                                        background: #fb842521 !important;
+                                        border-left: 4px solid $torange;
+                                    }
+                                }
+                            }
+                            .list_child.collapsed{
+                                max-height:0;
+                                transition: all 0.55s cubic-bezier(0, 1.06, 1, 1);
+                            }
                         }
                     }
                 }

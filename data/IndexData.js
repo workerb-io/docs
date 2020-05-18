@@ -11,29 +11,95 @@ const INDEX_DATA = [
         routeName: '/apiref',
         children: [
             {
-                id: 1,
-                title: 'Read',
-                routeName: '/read',
+                title: "click",
+                routeName: "/click",
                 children: null
             },
             {
-                id: 2,
-                title: 'Interact',
-                routeName: '/interact',
+                title: "download",
+                routeName: "/download",
                 children: null
             },
             {
-                id: 3,
-                title: 'Network',
-                routeName: '/network',
+                title: "event",
+                routeName: "/event",
                 children: null
             },
             {
-                id: 4,
-                title: 'Misc',
-                routeName: '/misc',
+                title: "getAttribute",
+                routeName: "/getAttribute",
                 children: null
             },
+            {
+                title: "httpDelete",
+                routeName: "/httpDelete",
+                children: null
+            },
+            {
+                title: "httpGet",
+                routeName: "/httpGet",
+                children: null
+            },
+            {
+                title: "httpPost",
+                routeName: "/httpPost",
+                children: null
+            },
+            {
+                title: "httpPut",
+                routeName: "/httpPut",
+                children: null
+            },
+            {
+                title: "log",
+                routeName: "/log",
+                children: null
+            },
+            {
+                title: "notify",
+                routeName: "/notify",
+                children: null
+            },
+            {
+                title: "open",
+                routeName: "/open",
+                children: null
+            },
+            {
+                title: "read",
+                routeName: "/read",
+                children: null
+            },
+            {
+                title: "readAll",
+                routeName: "/readAll",
+                children: null
+            },
+            {
+                title: "readTable",
+                routeName: "/readTable",
+                children: null
+            },
+            {
+                title: "readURL",
+                routeName: "/readURL",
+                children: null
+            },
+            {
+                title: "submit",
+                routeName: "/submit",
+                children: null
+            },
+            {
+                title: "tab",
+                routeName: "/tab",
+                children: null
+            },
+            {
+                title: "type",
+                routeName: "/type",
+                children: null
+            }
         ]
     },
     {
