@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next -p 4000",
+    "watch": "next -p 4000",
     "build": "next build",
     "export": "next export"
   },
@@ -17,7 +17,6 @@
     "@zeit/next-sass": "^1.0.1",
     "babel-plugin-root-import": "^6.5.0",
     "bootstrap": "^4.4.1",
-    "firebase-tools": "^7.4.0",
     "next": "^9.3.4",
     "next-images": "^1.4.0",
     "node-sass": "^4.13.1",
@@ -30,6 +29,7 @@
     "sass": "^1.26.3"
   },
   "devDependencies": {
+    "firebase-tools": "^7.4.0",
     "@mapbox/rehype-prism": "^0.4.0"
   }
 }

@@ -2,7 +2,7 @@
 
 ## To run the doc server locally, run the following steps: 
 1. yarn install
-2. yarn dev
+2. yarn watch
 3. open http://localhost:4000/ in browser
 
 
