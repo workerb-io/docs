@@ -173,6 +173,7 @@ body {
                     padding: 35px;
                     padding-top: 0px;
                     padding-left: 0px;
+                    margin-bottom: 57px;
                     display: flex;
                     // border-bottom: 1px solid rgba(162, 167, 174, 0.31);
                     .left-head {
@@ -336,7 +337,7 @@ body {
     }
 }
 // Mobile View
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     body{
         .navbar{
             padding: 1rem;
@@ -409,6 +410,30 @@ body {
                         .dd_ico img{
                             height: 20px;
                         }
+                    }
+                }
+                .doc_content{
+                    .md_content{
+                        .right-col-head{
+                            margin: 0;
+                            padding: 0;
+                            flex-direction: column;
+                            .left-head,.right-head{
+                                width: 100%;
+                            }
+                            .right-head .doc-head-icon-block{
+                                &:last-child {
+                                    top: 0;
+                                }
+                            }
+                        }
+                        .right-col-head~h4{
+                            padding: 4rem 0 0 !important;
+                        }
+                    }
+                    .documentation_box.row .doc_content .md_content h4:not(.left-head-h4-heading)
+                    .right-col-head~h4{
+                        padding: 3rem 0 0;
                     }
                 }
                 .slug_sidebar{
