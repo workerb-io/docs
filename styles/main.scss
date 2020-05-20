@@ -395,6 +395,12 @@ body {
                     position: relative;
                     padding: 15px;
                     top: 0;
+                    .row .sidenav .list_items{
+                        font-size: 20px;
+                        .dd_ico img{
+                            height: 20px;
+                        }
+                    }
                 }
             }
         }

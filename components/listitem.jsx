@@ -10,8 +10,17 @@ export const ListItem = ({ title, routeName, children }) => {
         if (ele.children[1]) ele.children[1].classList.toggle('dd_ico_rotate');
     }
 
+    const mob_sidenav_handler = () => {
+        let sidenav = document.querySelector('.sidenav_container')
+        let content = document.querySelector('.documentation_content')
+        let hmbg = document.querySelector('.menu_toggle')
+        sidenav.classList.toggle('d-none')
+        content.classList.toggle('d-none')
+        hmbg.classList.toggle('is_active')
+    }
+
     return (
-        <li className='list_items'>
+        <li className='list_items' onClick={() => !children ? mob_sidenav_handler() : null}>
             <Link href={routeName}>
                 <a>
                     <div className="list_title" onClick={dropdownHandler}>
@@ -43,7 +52,7 @@ export const ListItem = ({ title, routeName, children }) => {
                             })
                             .map((e, i) =>
                                 <Link key={i} href={`${routeName}` + `${e.routeName}`}>
-                                    <li className='list_child_items'>{e.title}</li>
+                                    <li onClick={mob_sidenav_handler} className='list_child_items'>{e.title}</li>
                                 </Link>
                             )
                         }
