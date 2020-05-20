@@ -387,6 +387,17 @@ body {
                 }
             }
         }
+        .container-fluid{
+            padding: 0;
+            .documentation_box.row{
+                margin: 0;
+                .sidenav_container{
+                    position: relative;
+                    padding: 15px;
+                    top: 0;
+                }
+            }
+        }
     }
     .feedback_buttons {
         display: none !important;

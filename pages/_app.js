@@ -7,7 +7,7 @@ import ReactGA from 'react-ga'
 import { Row, Col, Container } from 'react-bootstrap';
 import { Navbar } from '../components/navbar'
 import SideNav from '../components/sidenav'
-import {ga_anchor_binder} from '../utils/helper'
+import { ga_anchor_binder } from '../utils/helper'
 import '../styles/main.scss'
 
 const { publicRuntimeConfig } = getConfig()
@@ -26,6 +26,14 @@ function MyApp({ Component, pageProps }) {
             jssStyles.parentElement.removeChild(jssStyles);
         }
     }, []);
+    const toggle_hamburger = (e) => {
+        e.currentTarget.classList.toggle('is_active')
+        let sidenav = document.querySelector('.sidenav_container')
+        let content = document.querySelector('.documentation_content')
+
+        sidenav.classList.toggle('d-none')
+        content.classList.toggle('d-none')
+    }
     return (
         <React.Fragment>
             <Head>
@@ -36,13 +44,13 @@ function MyApp({ Component, pageProps }) {
                 />
                 <link rel="icon" href={require('../img/favicon.png')} sizes="32x32" />
             </Head>
-            <Navbar />
+            <Navbar hamburger_method={toggle_hamburger} />
             <Container fluid>
                 <Row className='documentation_box'>
-                    <Col className='sidenav_container' md={2} xs={4}>
+                    <Col className='sidenav_container d-none d-md-block' md={3} lg={2}>
                         <SideNav />
                     </Col>
-                    <Col md={10} xs={8}>
+                    <Col className='documentation_content' xs={12} md={9} lg={10}>
                         <Component className='doc_container' {...pageProps} />
                     </Col>
                 </Row>
