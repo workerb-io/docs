@@ -382,8 +382,16 @@ body {
             }
             .buttons-group{
                 flex: 1;
-                .login-button{
-                    display: none;
+                .login-group{
+                    &:first-child{
+                        margin-right: 10px;
+                    }
+                    .login-button{
+                        display: none;
+                    }
+                    .login-text{
+                        font-size: 16.5px;
+                    }
                 }
             }
         }
