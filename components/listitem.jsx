@@ -15,7 +15,7 @@ export const ListItem = ({ title, routeName, children }) => {
         let content = document.querySelector('.documentation_content')
         let hmbg = document.querySelector('.menu_toggle')
         sidenav.classList.toggle('d-none')
-        content.classList.toggle('d-none')
+        content.classList.remove('d-none')
         hmbg.classList.toggle('is_active')
     }
 
