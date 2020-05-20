@@ -10,6 +10,7 @@ const { FE_URL } = publicRuntimeConfig
 export const Navbar = () => {
     return (
         <div className="navbar">
+            <button class="menu_toggle">Menu</button>
             <div className="logo">
                 <a href="https://workerb.io">
                     <WorkerBFull />
