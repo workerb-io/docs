@@ -21,6 +21,10 @@ body {
         justify-content: space-between;
         box-shadow: 0 4px 9px 0 rgba(11, 11, 11, 0.53);
 
+        .menu_toggle{
+            display: none;
+        }
+
         .logo {
             height: 25px;
         }
@@ -142,6 +146,7 @@ body {
                                     line-height: 40px;
                                     padding: 0 2rem;
                                     cursor: pointer;
+                                    font-weight: 100;
                                     border-left: 4px solid transparent;
                                     &:hover {
                                         background: #fb842521 !important;
@@ -168,6 +173,7 @@ body {
                     padding: 35px;
                     padding-top: 0px;
                     padding-left: 0px;
+                    margin-bottom: 57px;
                     display: flex;
                     // border-bottom: 1px solid rgba(162, 167, 174, 0.31);
                     .left-head {
@@ -330,9 +336,121 @@ body {
         }
     }
 }
+// Mobile View
+@media (max-width: 767px) {
+    body{
+        .navbar{
+            padding: 1rem;
+            .menu_toggle {
+                margin-right: 1rem;
+                display: block;
+                position: relative;
+                width: 25px;
+                height: 20px;
+                background: transparent;
+                border: none;
+                outline: none;
+                border-top: 3px solid;
+                border-bottom: 3px solid;
+                color: $torange;
+                font-size: 0;
+                transition: all .25s ease-in-out;
+                &:before,
+                &:after {
+                    content: '';
+                    display: block;
+                    width: 99%;
+                    height: 3px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    background: currentColor;
+                    transform: translate(-50%, -50%);
+                    transition: transform .25s ease-in-out;
+                } 
+            };
+            .menu_toggle.is_active{
+                border-color: transparent;
+                &:before {
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
 
-@media (max-width: 768px) {
-    .feedback_buttons {
-        display: none !important;
+                &:after {
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+            .logo{
+                flex: 3;
+            }
+            .buttons-group{
+                flex: 1;
+                .login-group{
+                    &:first-child{
+                        margin-right: 10px;
+                    }
+                    .login-button{
+                        display: none;
+                    }
+                    .login-text{
+                        font-size: 16.5px;
+                    }
+                }
+            }
+        }
+        .container-fluid{
+            padding: 0;
+            .documentation_box.row{
+                margin: 0;
+                .sidenav_container{
+                    position: relative;
+                    padding: 15px;
+                    top: 0;
+                    .row .sidenav .list_items{
+                        font-size: 20px;
+                        .dd_ico img{
+                            height: 20px;
+                        }
+                    }
+                }
+                .doc_content{
+                    .md_content{
+                        .right-col-head{
+                            margin: 0;
+                            padding: 0;
+                            flex-direction: column;
+                            .left-head,.right-head{
+                                width: 100%;
+                            }
+                            .right-head .doc-head-icon-block{
+                                &:last-child {
+                                    top: 0;
+                                }
+                            }
+                        }
+                        .right-col-head~h4{
+                            padding: 4rem 0 0 !important;
+                        }
+                    }
+                    .documentation_box.row .doc_content .md_content h4:not(.left-head-h4-heading)
+                    .right-col-head~h4{
+                        padding: 3rem 0 0;
+                    }
+                }
+                .slug_sidebar{
+                    height: auto;
+                    position: relative;
+                    top: 0;
+                    .feedback_buttons{
+                        position: relative;
+                        flex-direction: row;
+                        font-size: 1.1rem;
+                        justify-content: flex-end;
+                        a{
+                            margin: 0 .75rem;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

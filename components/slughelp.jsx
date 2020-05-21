@@ -16,7 +16,7 @@ const SlugHelp = () => {
     }, []);
 
     return (
-        < div id='slughelp'>
+        <div id='slughelp' className='d-none d-md-block'>
             <p>On this page</p>
         </div>
     )

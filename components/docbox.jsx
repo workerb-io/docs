@@ -26,7 +26,7 @@ const DocBox = ({ title, children }) => {
                         {children}
                     </div>
                 </Col>
-                <Col className='slug_sidebar' lg={2} md={3} xs={0}>
+                <Col className='slug_sidebar' lg={2} md={3}>
                     <SlugHelp />
                     <FeedbackBtn />
                 </Col>

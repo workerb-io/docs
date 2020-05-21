@@ -18,7 +18,6 @@ import DocBox from '~/components/docbox'
     </div>
 </div>
 
-<br/><br/><br/>
 <br/>
 <hr/>
 

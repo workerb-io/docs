@@ -7,9 +7,10 @@ import WorkerBFull from './workerb'
 const { publicRuntimeConfig } = getConfig()
 const { FE_URL } = publicRuntimeConfig
 
-export const Navbar = () => {
+export const Navbar = ({ hamburger_method }) => {
     return (
         <div className="navbar">
+            <button className="menu_toggle" onClick={hamburger_method}>Menu</button>
             <div className="logo">
                 <a href="https://workerb.io">
                     <WorkerBFull />
