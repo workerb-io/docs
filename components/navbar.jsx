@@ -34,6 +34,13 @@ export const Navbar = ({ hamburger_method }) => {
                     <span className="login-text">Login</span>
                 </a>
             </span>
+            <span className='right_dropdown'>
+                <img className='right_dropdown_trigger' src={require('../img/dropdown_options.svg')} />
+                <div className='right_dropdown_content'>
+                    <a href={FE_URL + "libraries"}>Libraries</a>
+                    <a href={FE_URL + "login"}>Login</a>
+                </div>
+            </span>
         </div>
     )
 }
