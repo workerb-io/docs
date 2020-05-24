@@ -104,9 +104,25 @@ const INDEX_DATA = [
     },
     {
         id: 3,
-        title: 'Examples',
-        routeName: '/examples',
-        children: null
+        title: 'Demos',
+        routeName: '/demos',
+        children: [
+            {
+                title: "demo1",
+                routeName: "/demo1",
+                children: null
+            },
+            {
+                title: "demo2",
+                routeName: "/demo2",
+                children: null
+            },
+            {
+                title: "demo3",
+                routeName: "/demo3",
+                children: null
+            }
+        ]
     },
 ];
 
