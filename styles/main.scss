@@ -5,7 +5,7 @@ body {
     font-family: rubik;
 
     .hide {
-        display: none;
+        display: none !important;
     }
 
     .navbar {
@@ -129,7 +129,7 @@ body {
                                 text-overflow: ellipsis;
                                 border-left: 4px solid transparent;
                                 &:hover {
-                                    background: #fb842521 !important;
+                                    background-color: rgba(162, 167, 174, 0.13);
                                     border-left: 4px solid $torange;
                                 }
                                 .dd_ico{
@@ -154,7 +154,7 @@ body {
                                     font-weight: 100;
                                     border-left: 4px solid transparent;
                                     &:hover {
-                                        background: #fb842521 !important;
+                                        background-color: rgba(162, 167, 174, 0.13);
                                         border-left: 4px solid $torange;
                                     }
                                 }
@@ -162,6 +162,10 @@ body {
                             .list_child.collapsed{
                                 max-height:0;
                                 transition: all 0.55s cubic-bezier(0, 1.06, 1, 1);
+                            }
+                            .list_child_items.active,.list_title.active{
+                                background: #fb842521 !important;
+                                border-left: 4px solid $torange;
                             }
                         }
                     }
