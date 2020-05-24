@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 export const ListItem = ({ title, routeName, children }) => {
+    const router = useRouter();
 
     const dropdownHandler = (e) => {
         let ele = e.currentTarget;
@@ -24,7 +26,7 @@ export const ListItem = ({ title, routeName, children }) => {
             {children ?
                 <div className='list_item_with_children'>
                     <Link href={routeName}>
-                        <div className="list_title" onClick={dropdownHandler}>
+                        <div onClick={dropdownHandler} className={"list_title " + (router.pathname === routeName ? "active" : "")}>
                             <span>{title}</span>
                             <span className='dd_ico'>
                                 <img src={require('../img/dropdown.svg')} />
@@ -46,7 +48,10 @@ export const ListItem = ({ title, routeName, children }) => {
                             })
                             .map((e, i) =>
                                 <Link key={i} href={`${routeName}` + `${e.routeName}`}>
-                                    <li onClick={mob_sidenav_handler} className='list_child_items'>{e.title}</li>
+                                    <li
+                                        onClick={mob_sidenav_handler}
+                                        className={"list_child_items " + (router.pathname === routeName + e.routeName ? "active" : "")}
+                                    >{e.title}</li>
                                 </Link>
                             )
                         }
@@ -54,11 +59,11 @@ export const ListItem = ({ title, routeName, children }) => {
                 </div>
                 :
                 <Link href={routeName}>
-                    <div className="list_title">
+                    <div className={"list_title " + (router.pathname === routeName ? "active" : "")}>
                         <span>{title}</span>
                     </div>
                 </Link>
             }
-        </li>
+        </li >
     )
 }
