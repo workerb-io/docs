@@ -6,7 +6,7 @@ export const ListItem = ({ title, routeName, children }) => {
     const dropdownHandler = (e) => {
         let ele = e.currentTarget;
 
-        ele.closest('.list_items').lastChild.classList.toggle('collapsed');
+        ele.closest('.list_item_with_children').lastChild.classList.toggle('collapsed');
         if (ele.children[1]) ele.children[1].classList.toggle('dd_ico_rotate');
     }
 
@@ -21,22 +21,16 @@ export const ListItem = ({ title, routeName, children }) => {
 
     return (
         <li className='list_items' onClick={() => !children ? mob_sidenav_handler() : null}>
-            <Link href={routeName}>
-                <a>
-                    <div className="list_title" onClick={dropdownHandler}>
-                        <span>{title}</span>
-                        {children ?
-                            (
-                                <span className='dd_ico'>
-                                    <img src={require('../img/dropdown.svg')} />
-                                </span>
-                            ) : null
-                        }
-                    </div>
-                </a>
-            </Link>
             {children ?
-                (
+                <div className='list_item_with_children'>
+                    <Link href={routeName}>
+                        <div className="list_title" onClick={dropdownHandler}>
+                            <span>{title}</span>
+                            <span className='dd_ico'>
+                                <img src={require('../img/dropdown.svg')} />
+                            </span>
+                        </div>
+                    </Link>
                     <ul className='list_child collapsed' >
                         {children
                             .sort((a, b) => {
@@ -57,8 +51,13 @@ export const ListItem = ({ title, routeName, children }) => {
                             )
                         }
                     </ul>
-                )
-                : null
+                </div>
+                :
+                <Link href={routeName}>
+                    <div className="list_title">
+                        <span>{title}</span>
+                    </div>
+                </Link>
             }
         </li>
     )
