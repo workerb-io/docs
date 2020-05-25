@@ -13,7 +13,7 @@ The **click** function performs a mouse click on a target element. The element c
 
 -   **value**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to identify the target element in the DOM.
 -   **options**: An optional object used to control what the click function does. The options object can consist of following actions:
-    -   **method**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to control how the target element is searched. 
+    -   **method**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to control how the target element is searched. The default value of method is 'by_text'.
         -   `by_text` finds the target element by text value.
         -   `by_regex` finds the target element by regex.
         -   `by_id` finds the target element by id
