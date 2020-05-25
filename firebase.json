@@ -1,11 +1,14 @@
 {
-  "hosting": {
-    "public": "out",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
-    "trailingSlash": false
-  }
+  "hosting": [
+    {
+      "target": "docs",
+      "public": "out",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "trailingSlash": false
+    }
+  ]
 }
