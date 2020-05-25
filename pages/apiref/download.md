@@ -6,25 +6,30 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`download` is used to download files.
+The **download** can be used to download data as part of the script.
+<br/>
 
-**Arguments**
+##### Arguments
 
--   `filename` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) name of the file.
--   `content` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) content of the file.
--   `contentType` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) contentType of file. It can be either
-    - `text` for text files
-    - Any valid mime type for e.g `text/plain;charset=utf-8,`
+-   **filename**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the name of the file.
+-   **content**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the contents of the file.
+-   **contentType**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the contentType of the file. It can be either
+    - 'text' for text files
+    - Any valid mime type e.g 'text/plain;charset=utf-8'
 
-**Return**
+<br/>
+
+##### Return
 
 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-**Example**
+<br/>
+
+##### Examples
 
 ```javascript
-1 download("workerB.txt", "workerB is a wonderful tool to automate your browser tasks.", "text")
-2 readTable("workerB.png", "<base 64 png>", "image/png;base64," })
+1 download("workerB.txt", "Use workerB to automate your browser tasks.", "text")
 ```
+<br/>
 
 </DocBox>

@@ -33,6 +33,7 @@ import DocBox from '~/components/docbox'
 2 readTable("#table-to-read", {
 3       method: "by_id"
 4 })
+5 readTable("workerB.png", "<base 64 png>", "image/png;base64," })
 ```
 
 </DocBox>

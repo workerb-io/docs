@@ -118,8 +118,8 @@ const INDEX_DATA = [
         routeName: '/demos',
         children: [
             {
-                title: "readAll",
-                routeName: "/readAll",
+                title: "Hello World",
+                routeName: "/helloworld",
                 children: null
             },
             {
