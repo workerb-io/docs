@@ -99,6 +99,16 @@ const INDEX_DATA = [
                 title: "type",
                 routeName: "/type",
                 children: null
+            },
+            {
+                title: "runInTab",
+                routeName: "/runInTab",
+                children: null
+            },
+            {
+                title: "prompt",
+                routeName: "/prompt",
+                children: null
             }
         ]
     },
