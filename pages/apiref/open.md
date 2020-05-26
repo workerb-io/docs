@@ -6,20 +6,30 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`open` opens a link in the same browser window.
+The **open** function opens a link in the same browser window.
 
-**Arguments**
+<br/>
 
--   `URL` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) link to open
+##### Arguments
 
-**Return**
+-  **URL**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the link to open
+
+<br/>
+
+##### Return
 
 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-**Example**
+<br/>
+
+##### Examples
 
 ```javascript
 1 open('https://workerb.io/')
 ```
+<br/>
+
+##### Demos
+-   [Hello World](/demos/helloworld)
 
 </DocBox>

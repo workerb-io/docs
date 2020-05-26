@@ -6,33 +6,35 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`submit` is used for simulating the enter keypress event in a form element. This can result in the submission of the parent form.
+The **submit** function generates an the 'enter' keypress event on a target form element. This can result in the submission of the parent form.
 
-**Arguments**
+<br/>
 
--   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target input field in the DOM.
--   `options` is a config used by some workerB functions to modify behavior according to the given scenario. An option can consist of
-    -   `method` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) method used to query the DOM.
+##### Arguments
+
+-   **value**:A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to identify the target element in the DOM.
+-   **options**: An optional [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) used to control what the click function does. It can have the following properties:
+    -   **method**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to control how the target element is searched. The default value of method is 'by_text'. Here are the supported values: 
         -   `by_text` finds the target element by text value.
         -   `by_regex` finds the target element by regex.
         -   `by_id` finds the target element by id
         -   `by_xpath` finds the target element by an [xpath](https://developer.mozilla.org/en-US/docs/Web/XPath) query
         -   `by_query_selector` finds the target element using a [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
-        -   `by_query_selector_all` finds all the elements using a [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
- 
-    -   `retryDuration` ([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)) interval at which the function will try to keep looking for the target element.
+    -   **retryDuration**: A [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) which specifies after how many milliseconds the runtime will try to find the target element. The default value is 200. 
+    -   **numberOfTries**: A [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) number which specifies how many times the script runner will try to find the target element. The default value is 10.
+    -   **expectReload**: A [boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean) to indicate if script runner should expect the page to reload. If set to true, the script execution will pause after executing the click. It will resume after the page reloads. The default value is false.
 
-    -   `numberOfTries` ([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)) number of time the function will try to find the element.
+The **submit** function can be called without any arguments as well. In this case, the enter keypress event would be generated for the element with focus.
 
-    -   `expectReload` ([Boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean)) if set to true the script will pause the execution after successful exit of the function because the page is about to reload.
+<br/>
 
-`submit` can be called without any arguments as well. In this case, the enter keypress event would be generated for the element with focus.
-
-**Return**
+##### Return
 
 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-**Example**
+<br/>
+
+##### Examples
 
 ```javascript
 1 submit()
@@ -40,5 +42,10 @@ import DocBox from '~/components/docbox'
 3       method: 'by_query_selector'
 4 })
 ```
+
+<br/>
+
+##### Demos
+-   [Hello World](/demos/helloworld)
 
 </DocBox>

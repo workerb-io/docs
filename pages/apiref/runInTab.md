@@ -6,20 +6,26 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`runInTab` run script in child tab and return the results to main tab.
+The **runInTab** function runs the specified function in a new tab and returns the result to the current tab.
 
-**Arguments**
+<br/>
 
--   `function` ([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)) function to run in the new tab.
+##### Arguments
 
-**Return**
+-   **function**: A [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) which specifies the code that should be run in the new tab.
 
--   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value returned by the passed function in stringified format.
+<br/>
 
-**Example**
+##### Return
+
+A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) which is stringified version of the value returned by the passed function. 
+
+<br/>
+
+##### Examples
 
 ```javascript
-1  var tabResult = runInNewTab(
+1  var tabResult = runInTab(
 2    function () {
 3        open("https://en.wikipedia.org/wiki/Main_Page")
 4        click('#searchInput', { method: "by_query_selector" })
@@ -30,8 +36,8 @@ import DocBox from '~/components/docbox'
 9        return tableTxt
 10    }
 11 )
-
-download("wikipedia.txt", tabResult, "text")
+12 
+13 download("wikipedia.txt", tabResult, "text")
 ```
 
 </DocBox>

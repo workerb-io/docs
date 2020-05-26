@@ -6,17 +6,23 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`prompt` open prompt to ask user for input.
+The **prompt** function opens a [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) to query user for input.
 
-**Arguments**
+<br/>
 
--   `label` ([String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)) label to show over prompt input.
+##### Arguments
 
-**Return**
+-  **label**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the message to show on the prompt
 
--   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value provided to input by user.
+<br/>
 
-**Example**
+##### Return
+
+A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that has the user input.
+
+<br/>
+
+##### Examples
 
 ```javascript
 1  var name = prompt("what is your name?")

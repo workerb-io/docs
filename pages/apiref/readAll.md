@@ -6,25 +6,35 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`readAll` is used to get text of all the element matching given path.
+The **readAll** function returns texts of all target elements which match the query.
 
-**Arguments**
+<br/>
 
--   `value` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used to identify the target input field in the DOM.
--   `options` is a config used by some workerB functions to modify behavior according to the given scenario. An option can consist of
-    -   `method` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) method used to query the DOM.
+##### Arguments
+
+-   **value**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to identify the target elements in the DOM.
+-   **options**: An optional [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) used to control what the read function does. It can have the following properties:
+    -   **method**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to control how the target elements are searched. The default value of method is 'by_text'. Here are the supported values: 
         -   `by_text` finds the target element by text value.
         -   `by_regex` finds the target element by regex.
         -   `by_id` finds the target element by id
         -   `by_xpath` finds the target element by an [xpath](https://developer.mozilla.org/en-US/docs/Web/XPath) query
         -   `by_query_selector` finds the target element using a [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
-        -   `by_query_selector_all` finds all the elements using a [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+        -   `by_query_selector_all` finds all the elements using a [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)        
+    -   **retryDuration**: A [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) which specifies after how many milliseconds the runtime will try to find the target element. The default value is 200. 
+    -   **numberOfTries**: A [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) number which specifies how many times the script runner will try to find the target element. The default value is 10.
+    -   **expectReload**: A [boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean) to indicate if script runner should expect the page to reload. If set to true, the script execution will pause after executing the click. It will resume after the page reloads. The default value is false.
 
-**Return**
+<br/>
 
--   `text` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) stringified array of all the elements text.
+##### Return
 
-**Example**
+A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that is stringified version of the array of values read.
+
+<br/>
+
+##### Examples
+
 
 ```javascript
 1 readAll('.all_titles')

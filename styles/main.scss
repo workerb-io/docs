@@ -52,10 +52,8 @@ body {
                     height: 26px;
 
                     svg {
-                        path {
-                            fill: #ffffff;
-                            transition: all 0.2s ease-in-out;
-                        }
+                        fill: #ffffff;
+                        transition: all 0.2s ease-in-out;
                     }
                 }
 
@@ -75,7 +73,7 @@ body {
 
                     .login-button {
                         svg {
-                            path {
+                            path, rect {
                                 fill: #fb8525;
                                 transition: all 0.2s ease-in-out;
                             }
