@@ -14,9 +14,13 @@ The **prompt** function opens a [prompt](https://developer.mozilla.org/en-US/doc
 
 -  **label**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the message to show on the prompt
 
+<br/>
+
 ##### Return
 
 A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that has the user input.
+
+<br/>
 
 ##### Examples
 
