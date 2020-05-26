@@ -92,8 +92,8 @@ const LibrariesIcon = () => (
 
 const PlayIcon = () => (
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height='20px'
-        viewBox="0 0 75 75" Style="enable-background:new 0 0 75 75;" class="icon">
-        <g class="fill">
+        viewBox="0 0 75 75" className="icon">
+        <g className="fill">
             <rect x="27.6" y="51.4" fill="white" width="17.8" height="17.8"></rect>
             <rect x="27.6" y="31.6" fill="white" width="17.8" height="17.8"></rect>
             <rect x="34" y="27.6" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 75 57.1993)" fill="white" width="8.1" height="4.1"></rect>
