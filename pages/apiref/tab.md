@@ -6,20 +6,22 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`tab` opens a link in a new tab.
+The **tab** function opens a link in a new tab in the browser.
 
-**Arguments**
+<br/>
 
--   `URL` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) link to open
+##### Arguments
 
-**Return**
+-  **URL**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the link to open
+
+##### Return
 
 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-**Example**
+##### Examples
 
 ```javascript
-1 tab('https://trello.com/')
+1 tab('https://workerb.io/')
 ```
 
 </DocBox>
