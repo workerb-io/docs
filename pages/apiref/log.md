@@ -6,18 +6,24 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`log` is used to display logs throughout our script.
+The **log** function can be used to print messages to the browser console.
 
-**Arguments**
+<br/>
 
--   `message` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value to display in log.
--   `color` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value to be used as the color of log.
+##### Arguments
 
-**Return**
+-   **message**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the text to be logged.
+-   **color**: An optional [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the color of the text.
+
+<br/>
+
+##### Return
 
 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-**Example**
+<br/>
+
+##### Examples
 
 ```javascript
 1 log("this is a log", "blue")

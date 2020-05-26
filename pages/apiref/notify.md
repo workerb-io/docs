@@ -6,21 +6,27 @@ import DocBox from '~/components/docbox'
 <br/>
 <hr/>
 
-`notify` is used for sending notification from user scripts to user.
+The **notify** function can be used to display a message to the user. 
 
-**Arguments**
+<br/>
 
--   `message` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used as notification message.
--   `type` ([String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String)) value used as notification type. Notification can be of two type
+##### Arguments
+
+-   **message**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the text to be displayed.
+-   **type**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the type of the notification. Following values are supported:
     -   success
     -   error
--   `timeout` ([Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number)) value used as duration till the notification will be shown.
+-   **timeout**: A [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) used to specify the duration for which the notification will be displayed.
 
-**Return**
+<br/>
+
+##### Return
 
 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
-**Example**
+<br/>
+
+##### Examples
 
 ```javascript
 1 notify('this is a success notification', 'success', 3000)
