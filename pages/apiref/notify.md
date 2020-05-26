@@ -12,11 +12,11 @@ The **notify** function can be used to display a message to the user.
 
 ##### Arguments
 
--   **message**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the text to be displayed.
--   **type**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the type of the notification. Following values are supported:
+-   **message**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the text to be displayed.
+-   **type**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the type of the notification. Following values are supported:
     -   success
     -   error
--   **timeout**: A [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) used to specify the duration for which the notification will be displayed.
+-   **timeout**: A [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) used to specify the duration for which the notification will be displayed.
 
 <br/>
 

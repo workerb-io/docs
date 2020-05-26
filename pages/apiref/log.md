@@ -12,8 +12,8 @@ The **log** function can be used to print messages to the browser console.
 
 ##### Arguments
 
--   **message**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the text to be logged.
--   **color**: An optional [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the color of the text.
+-   **message**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the text to be logged.
+-   **color**: An optional [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the color of the text.
 
 <br/>
 

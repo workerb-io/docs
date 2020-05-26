@@ -12,16 +12,24 @@ The **open** function opens a link in the same browser window.
 
 ##### Arguments
 
--  **URL**: A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the link to open
+-  **URL**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the link to open
+
+<br/>
 
 ##### Return
 
 [undefined](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
+<br/>
 
 ##### Examples
 
 ```javascript
 1 open('https://workerb.io/')
 ```
+<br/>
+
+##### Demos
+-   [Hello World](/demos/helloworld)
 
 </DocBox>

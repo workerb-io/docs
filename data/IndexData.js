@@ -122,16 +122,6 @@ const INDEX_DATA = [
                 routeName: "/helloworld",
                 children: null
             },
-            {
-                title: "wikipediaDump",
-                routeName: "/wikipediaDump",
-                children: null
-            },
-            {
-                title: "storeInformation",
-                routeName: "/storeInformation",
-                children: null
-            }
         ]
     },
 ];
