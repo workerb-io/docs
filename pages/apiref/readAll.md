@@ -39,5 +39,5 @@ A [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 ```javascript
 1 readAll('.all_titles')
 ```
-
+    
 </DocBox>

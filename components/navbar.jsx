@@ -22,7 +22,7 @@ export const Navbar = ({ hamburger_method }) => {
                     <span className="login-button">
                         <PlayIcon />
                     </span>
-                    <span className="login-text">Play</span>
+                    <span className="login-text">Playground</span>
                 </a>
                 <a className="login-group" href={FE_URL + "libraries"} rel="noreferrer">
                     <span className="login-button">
