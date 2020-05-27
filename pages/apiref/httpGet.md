@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/httpGet'}>
 
 ### **httpGet**
-<br/>
 <hr/>
+<br/>
 
 
 The **httpGet** function can be used to make http [get](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET) requests.
@@ -30,5 +30,10 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 ```javascript
 1 httpGet("https://www.google.com")
 ```
+
+<br/>
+
+##### Demos
+-   [HTTP APIs](/demos/httpapis)
 
 </DocBox>

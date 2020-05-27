@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/tab'}>
 
 ### **tab**
-<br/>
 <hr/>
+<br/>
 
 The **tab** function opens a link in a new tab in the browser.
 

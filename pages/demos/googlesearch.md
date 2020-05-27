@@ -1,12 +1,12 @@
 import DocBox from '~/components/docbox'
 
-<DocBox title={'workerB | Docs/Demos/readAll'}>
+<DocBox title={'workerB | Docs/Demos/Google Search'}>
 
-### **Hello World**
-<br/>
+### **Google Search**
 <hr/>
+<br/>
 
-In this example, we search for workerb.io on google.com.
+In this demo, we search for workerb.io on google.com.
 
 ```javascript
 1 open('https://www.google.com')

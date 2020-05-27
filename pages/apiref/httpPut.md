@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/httpPut'}>
 
 ### **httpPut**
-<br/>
 <hr/>
+<br/>
 
 The **httpPut** function can be used to make http [put](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/PUT) requests.
 <br/>
