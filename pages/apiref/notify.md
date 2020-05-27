@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/notify '}>
 
 ### **notify**
-<br/>
 <hr/>
+<br/>
 
 The **notify** function can be used to display a message to the user. 
 

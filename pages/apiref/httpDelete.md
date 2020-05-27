@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/httpDelete'}>
 
 ### **getAttribute**
-<br/>
 <hr/>
+<br/>
 
 
 The **httpDelete** function can be used to make http [delete](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE) requests.

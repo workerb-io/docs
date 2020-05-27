@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/log '}>
 
 ### **log**
-<br/>
 <hr/>
+<br/>
 
 The **log** function can be used to print messages to the browser console.
 
@@ -28,5 +28,10 @@ The **log** function can be used to print messages to the browser console.
 ```javascript
 1 log("this is a log", "blue")
 ```
+
+<br/>
+
+##### Demos
+-   [HTTP APIs](/demos/httpapis)
 
 </DocBox>

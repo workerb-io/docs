@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/download'}>
 
 ### **download**
-<br/>
 <hr/>
+<br/>
 
 The **download** can be used to download data as part of the script.
 <br/>
@@ -30,8 +30,11 @@ The **download** can be used to download data as part of the script.
 ```javascript
 1 download("workerB.txt", "Use workerB to automate your browser tasks.", "text")
 ```
+
 <br/>
 
 ##### Demos
+-   [Wikipedia](/demos/wikipedia)
+
 
 </DocBox>

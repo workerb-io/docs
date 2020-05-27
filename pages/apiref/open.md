@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/open'}>
 
 ### **open**
-<br/>
 <hr/>
+<br/>
 
 The **open** function opens a link in the same browser window.
 
@@ -30,6 +30,7 @@ The **open** function opens a link in the same browser window.
 <br/>
 
 ##### Demos
--   [Hello World](/demos/helloworld)
+-   [Google Search](/demos/googlesearch)
+-   [Wikipedia](/demos/wikipedia)
 
 </DocBox>

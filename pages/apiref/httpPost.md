@@ -4,8 +4,8 @@ import DocBox from '~/components/docbox'
 
 
 ### **httpPost**
-<br/>
 <hr/>
+<br/>
 
 
 The **httpPost** function can be used to make http [post](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) requests.
@@ -37,5 +37,9 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 5 })
 ```
 
+<br/>
+
+##### Demos
+-   [HTTP APIs](/demos/httpapis)
 
 </DocBox>

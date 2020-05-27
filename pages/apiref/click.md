@@ -46,6 +46,10 @@ The **click** function performs a mouse click on a target element. The element c
 10})
 ```
 
+
 <br/>
+
+##### Demos
+-   [Wikipedia](/demos/wikipedia)
 
 </DocBox>

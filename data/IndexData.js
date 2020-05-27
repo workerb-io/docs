@@ -118,8 +118,23 @@ const INDEX_DATA = [
         routeName: '/demos',
         children: [
             {
-                title: "Hello World",
-                routeName: "/helloworld",
+                title: "Google Search",
+                routeName: "/googlesearch",
+                children: null
+            },
+            {
+                title: "HTTP APIs",
+                routeName: "/httpapis",
+                children: null
+            },
+            {
+                title: "Wikipedia",
+                routeName: "/wikipedia",
+                children: null
+            },
+            {
+                title: "Jenkins Build",
+                routeName: "/jenkinsbuild",
                 children: null
             },
         ]

@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/runInTab'}>
 
 ### **runInTab**
-<br/>
 <hr/>
+<br/>
 
 The **runInTab** function runs the specified function in a new tab and returns the result to the current tab.
 
@@ -27,7 +27,7 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 ```javascript
 1  var tabResult = runInTab(
 2    function () {
-3        open("https://en.wikipedia.org/wiki/Main_Page")
+3        open("https://cnn.com")
 4        click('#searchInput', { method: "by_query_selector" })
 5        type("steve jobs", '#searchInput', { method: 'by_query_selector' })
 6        submit('#searchInput', { expectReload: true })
@@ -36,8 +36,11 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 9        return tableTxt
 10    }
 11 )
-12 
-13 download("wikipedia.txt", tabResult, "text")
 ```
+
+<br/>
+
+##### Demos
+-   [Wikipedia](/demos/wikipedia)
 
 </DocBox>

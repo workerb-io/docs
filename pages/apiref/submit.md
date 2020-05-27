@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/submit'}>
 
 ### **submit**
-<br/>
 <hr/>
+<br/>
 
 The **submit** function generates an the 'enter' keypress event on a target form element. This can result in the submission of the parent form.
 
@@ -46,6 +46,7 @@ The **submit** function can be called without any arguments as well. In this cas
 <br/>
 
 ##### Demos
--   [Hello World](/demos/helloworld)
+-   [Google Search](/demos/googlesearch)
+-   [Wikipedia](/demos/wikipedia)
 
 </DocBox>
