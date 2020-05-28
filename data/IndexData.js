@@ -123,6 +123,11 @@ const INDEX_DATA = [
                 children: null
             },
             {
+                title: "Bookmarks++",
+                routeName: "/bookmarks",
+                children: null
+            },
+            {
                 title: "HTTP APIs",
                 routeName: "/httpapis",
                 children: null

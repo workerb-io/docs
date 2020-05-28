@@ -14,7 +14,7 @@ The **type** function writes a given string to a target input field. The input f
 -   **text**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that should be written to a target input field.
 -   **path**:A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to identify the target element in the DOM.
 -   **options**: An optional [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) used to control what the click function does. It can have the following properties:
-    -   **method**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to control how the target element is searched. The default value of method is 'by_text'. Here are the supported values: 
+    -   **method**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to control how the target element is searched. The default value of method is 'by_label'. If an input element is not found, a search is performed using 'by_placeholder'. Here are the supported values: 
         -   `by_text` finds the target element by text value.
         -   `by_regex` finds the target element by regex.
         -   `by_id` finds the target element by id
@@ -47,6 +47,5 @@ The **type** function writes a given string to a target input field. The input f
 ##### Demos
 -   [Google Search](/demos/googlesearch)
 -   [Wikipedia](/demos/wikipedia)
-
 
 </DocBox>
