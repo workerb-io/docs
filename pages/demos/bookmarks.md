@@ -8,7 +8,7 @@ import DocBox from '~/components/docbox'
 
 When we create bookmarks, we store a URL. This is limiting as you can only store a shortcut to a single resource. A workaround for this limitation is golinks. With golinks, you can support URL templates. So instead of bookmarking a URL like https://jira.workerb.io/browse/BE-293, you can create a golink: https://go/jira/<jira_id>. Then, you can open any JIRA by filling in the JIRA ID into the golink. For example, https://go/jira/BE-293
 
-workerB runtime supports user specified arguments which can be used inside the script. This can be used to create URL templates. For example, the demo for [Google Search](/demos/googlesearch) can be updated to use a URL template, rather than typing the search from Google homepage.  
+workerB runtime supports user specified arguments which can be used inside the script. This can be used to create URL templates. For example, the demo for [Google Search](/demos/googlesearch) can be updated to use a URL template, rather than going to Google.com, typing the search and submitting the search.  
 
 ```javascript
 1  var search_term = args[0]
