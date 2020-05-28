@@ -12,24 +12,22 @@ workerB runtime supports user specified arguments which can be used inside the s
 
 ```javascript
 1  var search_term = args[0]
-2  
-3  // if argument is not specified, prompt the user
-4  if (!search_term) {
-5    search_term = prompt("What do you want to search for?")
-6  }
-7  open('https://www.google.com/search?q' + search_term)
+2  if (!search_term) {                 // if argument is not specified, prompt the user
+3    search_term = prompt("What do you want to search for?")
+4  }
+5  open('https://www.google.com/search?q' + search_term)
 ```
+
+<br/>
 
 Similarly, you can perform a search on your Google drive by using the following script. 
 
 ```javascript
 1  var search_term = args[0]
-2  
-3  // if argument is not specified, prompt the user
-4  if (!search_term) {
-5    search_term = prompt("What do you want to search for?")
-6  }
-7  open('https://docs.google.com/document/u/0/?tgif=d&q=' + search_term)
+3  if (!search_term) {             // if argument is not specified, prompt the user
+4    search_term = prompt("What do you want to search for?")
+5  }
+6  open('https://docs.google.com/document/u/0/?tgif=d&q=' + search_term)
 ```
 
 </DocBox>
