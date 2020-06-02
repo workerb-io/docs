@@ -12,7 +12,7 @@ The **httpDelete** function can be used to make http [delete](https://developer.
 
 ##### Arguments
 
--   **path**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the URL where [delete](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE) request is made.
+-   **url**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the URL where [delete](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/DELETE) request is made.
 -   **data**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the payload for the request.
 -   **headers**: An optional [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) used to specify the [headers](https://developer.mozilla.org/en-US/docs/Glossary/HTTP_header) for the request.
 

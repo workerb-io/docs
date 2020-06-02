@@ -12,7 +12,7 @@ The **open** function opens a link in the same browser window.
 
 ##### Arguments
 
--  **URL**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the link to open
+-  **url**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the link to open
 
 <br/>
 

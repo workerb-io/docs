@@ -12,7 +12,7 @@ The **tab** function opens a link in a new tab in the browser.
 
 ##### Arguments
 
--  **URL**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the link to open
+-  **url**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that specifies the link to open
 
 <br/>
 

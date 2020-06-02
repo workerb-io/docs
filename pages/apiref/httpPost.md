@@ -13,7 +13,7 @@ The **httpPost** function can be used to make http [post](https://developer.mozi
 
 ##### Arguments
 
--   **path**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the URL where [post](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) request is made.
+-   **url**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the URL where [post](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/POST) request is made.
 -   **data**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to specify the payload for the request.
 -   **headers**: An optional [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) used to specify the [headers](https://developer.mozilla.org/en-US/docs/Glossary/HTTP_header) for the request.
 

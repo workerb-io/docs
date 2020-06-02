@@ -12,7 +12,7 @@ The **event** function generates an event on a target element.
 
 ##### Arguments
 
-- **path**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) value used to identify the target element in the DOM.
+- **query**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) value used to identify the target element in the DOM.
 - **eventConfig**: An [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) used to specify the event. It has the following properties:  
     - **eventType**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) value used to the specify the type of the event. Following values are supported: 
         - keydown
