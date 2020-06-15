@@ -12,6 +12,7 @@ jobs:
     - name: Setup Environment
       run: |
         touch .env
+        echo 'AMPLITUDE_KEY = ${{ secrets.STAGE_AMPLITUDE_KEY }}' > .env
         echo 'FE_URL = ${{ secrets.STAGE_LOGIN_URL }}' > .env
         echo 'GA_ID = ${{ secrets.STAGE_GA_ID }}' >> .env
     - name: Yarn Build
