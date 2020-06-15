@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/submit'}>
 
 ### **submit**
-<br/>
 <hr/>
+<br/>
 
 The **submit** function generates an the 'enter' keypress event on a target form element. This can result in the submission of the parent form.
 
@@ -12,7 +12,7 @@ The **submit** function generates an the 'enter' keypress event on a target form
 
 ##### Arguments
 
--   **value**:A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to identify the target element in the DOM.
+-   **query**:A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to identify the target element in the DOM.
 -   **options**: An optional [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) used to control what the click function does. It can have the following properties:
     -   **method**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) used to control how the target element is searched. The default value of method is 'by_text'. Here are the supported values: 
         -   `by_text` finds the target element by text value.
@@ -46,6 +46,7 @@ The **submit** function can be called without any arguments as well. In this cas
 <br/>
 
 ##### Demos
--   [Hello World](/demos/helloworld)
+-   [Google Search](/demos/googlesearch)
+-   [Wikipedia](/demos/wikipedia)
 
 </DocBox>

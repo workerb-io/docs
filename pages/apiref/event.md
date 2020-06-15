@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/event'}>
 
 ### **event**
-<br/>
 <hr/>
+<br/>
 
 The **event** function generates an event on a target element.
 
@@ -12,7 +12,7 @@ The **event** function generates an event on a target element.
 
 ##### Arguments
 
-- **path**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) value used to identify the target element in the DOM.
+- **query**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) value used to identify the target element in the DOM.
 - **eventConfig**: An [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) used to specify the event. It has the following properties:  
     - **eventType**: A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) value used to the specify the type of the event. Following values are supported: 
         - keydown
@@ -34,7 +34,6 @@ The **event** function generates an event on a target element.
         -   `by_query_selector` finds the target element using a [query selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
     -   **retryDuration**: A [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) which specifies after how many milliseconds the runtime will try to find the target element. The default value is 200. 
     -   **numberOfTries**: A [number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number) number which specifies how many times the script runner will try to find the target element. The default value is 10.
-    -   **expectReload**: A [boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean) to indicate if script runner should expect the page to reload. If set to true, the script execution will pause after executing the click. It will resume after the page reloads. The default value is false.
 
 <br/>
 

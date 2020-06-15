@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/readURL'}>
 
 ### **readURL**
-<br/>
 <hr/>
+<br/>
 
 The **readURL** function returns the URL of the webpage in the active tab.
 

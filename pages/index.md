@@ -43,6 +43,6 @@ With the help of these, you can replace your interactions on any website with a 
 
 In this guide, we cover the following: 
 * [API Reference](/apiref)
-* [Examples](/examples)
+* [Demos](/demos)
 
 </DocBox>

@@ -3,8 +3,8 @@ import DocBox from '~/components/docbox'
 <DocBox title={'workerB | Docs/API Reference/prompt'}>
 
 ### **prompt**
-<br/>
 <hr/>
+<br/>
 
 The **prompt** function opens a [prompt](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt) to query user for input.
 
@@ -28,5 +28,11 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 1  var name = prompt("what is your name?")
 2  log("hey " + name, 'blue')
 ```
+
+<br/>
+
+##### Demos
+-   [Jenkins Build](/demos/jenkinsbuild)
+
 
 </DocBox>
