@@ -8,16 +8,11 @@ import FeedbackBtn from './feedbackbtn';
 
 const DocBox = ({ title, children }) => {
     const router = useRouter();
-    const [inChrome, setInChrome] = useState(false)
 
     useEffect(() => {
         let page = `/docs${router.pathname}`
         ReactGA.set({ page });
         ReactGA.pageview(page);
-
-        if (window['chrome'] && window['chrome'].runtime) {
-            setInChrome(true)
-        }
     }, []);
 
     return (
@@ -26,12 +21,6 @@ const DocBox = ({ title, children }) => {
                 <title>{title}</title>
             </Head>
             <Row>
-                {
-                    <span>
-                        inChrome:
-                        {inChrome ? <p>true</p> : <p>false</p>}
-                    </span>
-                }
                 <Col lg={{ span: 9, offset: 1 }} md={9} xs={12} className='doc_content'>
                     <div className='md_content'>
                         {children}
