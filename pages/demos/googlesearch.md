@@ -6,7 +6,7 @@ import DocBox from '~/components/docbox'
 <hr/>
 <br/>
 
-In this demo, we search for workerb.io on google.com.
+In this demo, we search for workerb.io on google.com
 
 ```javascript
 1 open('https://www.google.com')
