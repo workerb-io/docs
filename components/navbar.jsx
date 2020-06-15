@@ -8,7 +8,6 @@ import WorkerBFull from './svg-components/workerb'
 
 const { publicRuntimeConfig } = getConfig()
 const { FE_URL, AMPLITUDE_KEY } = publicRuntimeConfig
-import amplitude from "amplitude-js";
 import {
     AmplitudeProvider,
     Amplitude,
@@ -16,9 +15,12 @@ import {
 } from "@amplitude/react-amplitude";
 
 export const Navbar = ({ hamburger_method }) => {
+    if (typeof window !== 'undefined') {
+        amplitude = require('amplitude-js/amplitude');
+      }
     return (
         <AmplitudeProvider
-            amplitudeInstance={amplitude.getInstance()}
+            amplitudeInstance={amplitude ? amplitude.getInstance() : null}
             apiKey={AMPLITUDE_KEY}
         >
             <Amplitude
