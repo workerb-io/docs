@@ -8,7 +8,10 @@ jobs:
     - name: Check out code
       uses: actions/checkout@master
     - name: Yarn Install
-      run: yarn install
+      run: |
+        git clone https://${{ secrets.GITLAB_TOKEN }}@gitlab.com/workerb/wb-editor.git
+        sed -i -e 's/git+ssh:\/\/git@gitlab.com\/workerb\/wb-editor.git/file:\/\/wb-editor/g' ./package.json
+        yarn install
     - name: Setup Environment
       run: |
         touch .env
