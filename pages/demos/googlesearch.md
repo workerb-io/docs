@@ -1,4 +1,10 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
+
+export const WB_SCRIPT = `open('https://www.google.com')
+type('workerb.io', 'Search')
+submit()
+`
 
 <DocBox title={'workerB | Docs/Demos/Google Search'}>
 
@@ -8,10 +14,11 @@ import DocBox from '~/components/docbox'
 
 In this demo, we search for workerb.io on google.com
 
-```javascript
-1 open('https://www.google.com')
-2 type('workerb.io', 'Search')
-5 submit()
-```
+
+<WBeditor
+    code = {WB_SCRIPT}
+    showShareIcon={false}
+/>
+
 
 </DocBox>
