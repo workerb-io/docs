@@ -18,6 +18,7 @@ jobs:
     - name: Setup Environment
       run: |
         touch .env
+        echo 'AMPLITUDE_KEY = ${{ secrets.PROD_AMPLITUDE_KEY }}' > .env
         echo 'FE_URL = ${{ secrets.PROD_LOGIN_URL }}' > .env
         echo 'GA_ID = ${{ secrets.PROD_GA_ID }}' >> .env
     - name: Yarn Build

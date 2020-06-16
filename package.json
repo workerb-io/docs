@@ -12,9 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+		"@amplitude/react-amplitude": "^1.0.0",
     "@mdx-js/loader": "^1.5.8",
     "@next/mdx": "^9.3.4",
     "@zeit/next-sass": "^1.0.1",
+    "amplitude-js": "^5.2.2",
     "babel-plugin-root-import": "^6.5.0",
     "bootstrap": "^4.4.1",
     "next": "^9.3.4",
