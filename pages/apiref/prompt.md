@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/prompt'}>
 
@@ -24,10 +25,15 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 
 ##### Examples
 
-```javascript
-1  var name = prompt("what is your name?")
-2  log("hey " + name, 'blue')
-```
+export const wb_script_1 = `var name = prompt("what is your name?")
+log("hey " + name, 'blue')`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 <br/>
 

@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/log '}>
 
@@ -25,9 +26,14 @@ The **log** function can be used to print messages to the browser console.
 
 ##### Examples
 
-```javascript
-1 log("this is a log", "blue")
-```
+export const wb_script_1 = `log("this is a log", "blue")`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 <br/>
 

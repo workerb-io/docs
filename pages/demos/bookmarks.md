@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/Demos/Bookmarks++'}>
 
@@ -10,24 +11,34 @@ When we create bookmarks, we store a URL. This is limiting as you can only store
 
 workerB runtime supports user specified arguments which can be used inside the script. This can be used to create URL templates. For example, the demo for [Google Search](/demos/googlesearch) can be updated to use a URL template, rather than going to Google.com, typing the search and submitting the search.  
 
-```javascript
-1  var search_term = args[0]
-2  if (!search_term) {                 // if argument is not specified, prompt the user
-3    search_term = prompt("What do you want to search for?")
-4  }
-5  open('https://www.google.com/search?q' + search_term)
-```
+export const wb_script_1 = `var search_term = args[0]
+if (!search_term) {                 // if argument is not specified, prompt the user
+    search_term = prompt("What do you want to search for?")
+}
+open('https://www.google.com/search?q' + search_term)
+`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+/>
 
 <br/>
 
 Similarly, you can perform a search on your Google drive by using the following script. 
 
-```javascript
-1  var search_term = args[0]
-3  if (!search_term) {             // if argument is not specified, prompt the user
-4    search_term = prompt("What do you want to search for?")
-5  }
-6  open('https://docs.google.com/document/u/0/?tgif=d&q=' + search_term)
-```
+export const wb_script_2 = `var search_term = args[0]
+if (!search_term) {             // if argument is not specified, prompt the user
+    search_term = prompt("What do you want to search for?")
+}
+open('https://docs.google.com/document/u/0/?tgif=d&q=' + search_term)
+`
+
+<WBeditor
+    code = {wb_script_2}
+    readOnly = {true}
+    showShareIcon={false}
+/>
 
 </DocBox>

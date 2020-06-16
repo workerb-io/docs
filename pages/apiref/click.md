@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/click'}>
 
@@ -33,18 +34,24 @@ The **click** function performs a mouse click on a target element. The element c
 
 ##### Examples
 
-```javascript
-1 click('Run pipeline') // default lookup by_text
-2 click('(\d+) branches', { // lookup by regex
-3       'method': 'by_regex'
-4 })
-5 click('/html/body/div[3]/form/div[2]/div[1]/div[1]/a/img', { // lookup by xpath
-6       'method': 'by_xpath'
-7 })
-8 click('#element_Id', {  // lookup by query selector
-9       'method': 'by_query_selector' 
-10})
-```
+export const wb_script_1 = `click('Run pipeline') // default lookup by_text
+click('(\d+) branches', { // lookup by regex
+    'method': 'by_regex'
+})
+click('/html/body/div[3]/form/div[2]/div[1]/div[1]/a/img', { // lookup by xpath
+    'method': 'by_xpath'
+})
+click('#element_Id', {  // lookup by query selector
+    'method': 'by_query_selector' 
+})
+`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 
 <br/>

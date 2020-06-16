@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/open'}>
 
@@ -24,9 +25,15 @@ The **open** function opens a link in the same browser window.
 
 ##### Examples
 
-```javascript
-1 open('https://workerb.io/')
-```
+export const wb_script_1 = `open('https://workerb.io/')`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
+
 <br/>
 
 ##### Demos

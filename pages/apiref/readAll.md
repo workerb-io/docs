@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/readAll'}>
 
@@ -28,9 +29,14 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 ##### Examples
 
 
-```javascript
-1 readAll('.all_titles')
-```
+export const wb_script_1 = `readAll('.all_titles')`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 <br/>
 

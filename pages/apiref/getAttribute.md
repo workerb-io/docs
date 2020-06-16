@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/getAttribute'}>
 
@@ -35,10 +36,16 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 
 ##### Examples
 
-```javascript
-1 getAttribute(["href"], '.d-table.table-fixed.col-12.width-full.py-4.border-bottom.border-gray-light [data-hovercard-type="user"]', {
-2   method: "by_query_selector_all"
-3 })
-```
+export const wb_script_1 =`getAttribute(["href"], '.d-table.table-fixed.col-12.width-full.py-4.border-bottom.border-gray-light [data-hovercard-type="user"]', {
+    method: "by_query_selector_all"
+})
+`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 </DocBox>

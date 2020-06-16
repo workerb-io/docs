@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/httpGet'}>
 
@@ -27,9 +28,14 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 
 ##### Examples
 
-```javascript
-1 httpGet("https://www.google.com")
-```
+export const wb_script_1 = `httpGet("https://www.google.com")`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 <br/>
 

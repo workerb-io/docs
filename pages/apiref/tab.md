@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/tab'}>
 
@@ -24,8 +25,13 @@ The **tab** function opens a link in a new tab in the browser.
 
 ##### Examples
 
-```javascript
-1 tab('https://workerb.io/')
-```
+export const wb_script_1 = `tab('https://workerb.io/')`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 </DocBox>

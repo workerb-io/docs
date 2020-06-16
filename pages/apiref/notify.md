@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/notify '}>
 
@@ -28,9 +29,14 @@ The **notify** function can be used to display a message to the user.
 
 ##### Examples
 
-```javascript
-1 notify('this is a success notification', 'success', 3000)
-2 notify('this is a error notification', 'error', 3000)
-```
+export const wb_script_1 =`notify('this is a success notification', 'success', 3000)
+notify('this is a error notification', 'error', 3000)`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 </DocBox>
