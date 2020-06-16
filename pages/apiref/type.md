@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/type'}>
 
@@ -35,12 +36,17 @@ The **type** function writes a given string to a target input field. The input f
 
 ##### Examples
 
-```javascript
-1 type('testuser', 'Username or email')
-2 type('Automate your browser rituals', '#workerB_Input', {
-3       method: 'by_query_selector'
-4 })
-```
+export const wb_script_1 = `type('testuser', 'Username or email')
+type('Automate your browser rituals', '#workerB_Input', {
+    method: 'by_query_selector'
+})`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 <br/>
 

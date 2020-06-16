@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/submit'}>
 
@@ -36,12 +37,17 @@ The **submit** function can be called without any arguments as well. In this cas
 
 ##### Examples
 
-```javascript
-1 submit()
-2 submit('#workerB_Input', {
-3       method: 'by_query_selector'
-4 })
-```
+export const wb_script_1 = `submit()
+submit('#workerB_Input', {
+    method: 'by_query_selector'
+})`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 <br/>
 
