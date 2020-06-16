@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/readTable'}>
 
@@ -37,12 +38,17 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 
 ##### Examples
 
-```javascript
-1 readTable(".table-to-read")
-2 readTable("#table-to-read", {
-3       method: "by_id"
-4 })
-5 readTable("workerB.png", "<base 64 png>", "image/png;base64," })
-```
+export const wb_script_1 = `readTable(".table-to-read")
+readTable("#table-to-read", {
+    method: "by_id"
+})
+readTable("workerB.png", "<base 64 png>", "image/png;base64," })`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 </DocBox>
