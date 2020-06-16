@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/httpDelete'}>
 
@@ -28,12 +29,18 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 
 ##### Examples
 
-```javascript
-1 httpDelete('https://www.google.com', JSON.stringify({ 
-2   'name': 'workerB' 
-3 }), {
-4   'content-type': 'application/json'
-5 })
-```
+export const wb_script_1 = `httpDelete('https://www.google.com', JSON.stringify({ 
+    'name': 'workerB' 
+}), {
+    'content-type': 'application/json'
+})
+`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 </DocBox>
