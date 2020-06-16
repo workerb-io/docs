@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/event'}>
 
@@ -45,13 +46,19 @@ The **event** function generates an event on a target element.
 
 ##### Examples
 
-```javascript
-1 event('#s2id_project_namespace_id > a', {
-4     'eventType': 'mousedown'
-5 }, {
-2     'method': 'by_query_selector'
-3 })
-```
+export const wb_script_1 = `event('#s2id_project_namespace_id > a', {
+    'eventType': 'mousedown'
+}, {
+    'method': 'by_query_selector'
+})
+`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 <br/>
 

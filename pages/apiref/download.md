@@ -1,4 +1,5 @@
 import DocBox from '~/components/docbox'
+import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/download'}>
 
@@ -27,9 +28,14 @@ The **download** can be used to download data as part of the script.
 
 ##### Examples
 
-```javascript
-1 download("workerB.txt", "Use workerB to automate your browser tasks.", "text")
-```
+export const wb_script_1 = `download("workerB.txt", "Use workerB to automate your browser tasks.", "text")`
+
+<WBeditor
+    code = {wb_script_1}
+    readOnly = {true}
+    showShareIcon={false}
+    showRunButton={false}
+/>
 
 <br/>
 

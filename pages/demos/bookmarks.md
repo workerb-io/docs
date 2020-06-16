@@ -1,7 +1,6 @@
 import DocBox from '~/components/docbox'
 import WBeditor from 'wb-editor'
 
-
 <DocBox title={'workerB | Docs/Demos/Bookmarks++'}>
 
 ### **Bookmarks++**
