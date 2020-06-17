@@ -16,13 +16,9 @@ import {
 
 export const Navbar = ({ hamburger_method }) => {
     let amplitude = undefined
-    
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            amplitude = require('amplitude-js/amplitude');
-        }
-    }, []);
-
+    if (typeof window !== 'undefined') {
+        amplitude = require('amplitude-js/amplitude');
+    }
     return (
         <AmplitudeProvider
             amplitudeInstance={amplitude ? amplitude.getInstance() : null}
