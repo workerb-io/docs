@@ -1,5 +1,5 @@
 import getConfig from 'next/config'
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import PlayIcon from './svg-components/PlayIcon'
 import LibrariesIcon from './svg-components/LibrariesIcon'
