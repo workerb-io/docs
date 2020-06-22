@@ -7,8 +7,8 @@ export const Footer = () => (
                 <span>© 2019 workerB. All rights reserved.</span>
             </div>
             <div className="footer_children tnc">
-                <a href="/terms_and_conditions.html">Terms &amp; Condition</a>
-                <a href="/privacy_policy.html">Privacy Policy</a>
+                <a href="https://workerb.io/terms_and_conditions.html">Terms &amp; Condition</a>
+                <a href="https://workerb.io/privacy_policy.html">Privacy Policy</a>
             </div>
             <div className="footer_children social_icons">
                 <a href="https://github.com/workerb-io/" rel="noopener noreferrer" target="_blank">
