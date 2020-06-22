@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import ReactGA from 'react-ga'
 import { Row, Col, Container } from 'react-bootstrap';
 import { Navbar } from '../components/navbar'
+import { Footer } from '../components/footer'
 import SideNav from '../components/sidenav'
 import { ga_anchor_binder } from '../utils/helper'
 import '../styles/main.scss'
@@ -55,6 +56,7 @@ function MyApp({ Component, pageProps }) {
                     </Col>
                 </Row>
             </Container>
+            <Footer />
         </React.Fragment >
     );
 }
