@@ -301,8 +301,8 @@ body {
 
     footer.footer{
         background:#1e293b;
-        padding: 16px 0;
-        font-size: 14px;
+        padding: 8px 0;
+        font-size: 12px;
         // min-height: 5px;
         display: flex;
         justify-content: center;
@@ -324,7 +324,10 @@ body {
             }
             .footer_children.tnc{
                 display: flex;
-                justify-content: space-evenly;
+                justify-content: center;
+                a{
+                    margin: auto 5px;
+                }
             }
             .footer_children.social_icons{
                 display: flex;
@@ -486,14 +489,6 @@ body {
                     padding: 7px;
                     width: 100%;
                     text-align: center;
-                }
-                .footer_children.tnc{
-                    display: flex;
-                    justify-content: center;
-                    a{
-                        padding-left: 5px;
-                        padding-right: 5px;
-                    }
                 }
                 .footer_children.social_icons{
                     display: flex;
