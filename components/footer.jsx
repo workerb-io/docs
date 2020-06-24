@@ -9,8 +9,12 @@ export const Footer = () => {
                     <span>© 2020 workerB. All rights reserved.</span>
                 </div>
                 <div className="footer_children tnc">
-                    <a href="https://workerb.io/terms_and_conditions.html">Terms &amp; Condition</a>
-                    <a href="https://workerb.io/privacy_policy.html">Privacy Policy</a>
+                    <a href="https://workerb.io/terms_and_conditions.html"
+                        onClick={ReactGA.event({ category: 'wbdocs_fl_term&cond', action: 'click', label: 'footer_link_click' })}>
+                        Terms &amp; Condition</a>
+                    <a href="https://workerb.io/privacy_policy.html"
+                        onClick={ReactGA.event({ category: 'wbdocs_fl_privacypol', action: 'click', label: 'footer_link_click' })}>
+                        Privacy Policy</a>
                 </div>
                 <div className="footer_children social_icons">
                     <a href="https://github.com/workerb-io/" target="_blank" rel="noopener noreferrer"
