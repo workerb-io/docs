@@ -25,12 +25,13 @@ const FeedbackBtn = () => {
         }
 
         let issue_body = `*%20Doc%20page:%20[${edit_btn.href.split('/master')[1]}](${window.location.href})`
-        report_btn.href = `${report_issue_url}?body=${issue_body.replace(/\//g,'%2f')}`
+        report_btn.href = `${report_issue_url}?body=${issue_body.replace(/\//g, '%2f')}`
     }, []);
     return (
         <div className="feedback_buttons">
             <a id='edit_page_fb_btn' target='_blank' href='#'>Edit Page</a>
             <a id='report_fb_btn' target='_blank' href='#'>Report Issue</a>
+            <a id='getHelp' target='_blank' href='https://spectrum.chat/workerb/support'>Get Help</a>
         </div>
     )
 }
