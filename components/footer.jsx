@@ -17,10 +17,6 @@ export const Footer = () => {
                         Privacy Policy</a>
                 </div>
                 <div className="footer_children social_icons">
-                    <a href="https://spectrum.chat/workerb" target="_blank" rel="noopener noreferrer"
-                        onClick={ReactGA.event({ category: 'wbdocs_fl_spectrum', action: 'click', label: 'footer_link_click' })}>
-                        <img src={require('../img/social/spectrum.svg')} alt='spectrum' />
-                    </a>
                     <a href="https://github.com/workerb-io/" target="_blank" rel="noopener noreferrer"
                         onClick={ReactGA.event({ category: 'wbdocs_fl_github', action: 'click', label: 'footer_link_click' })}>
                         <img src={require('../img/social/github.svg')} alt='github' />
@@ -40,6 +36,10 @@ export const Footer = () => {
                     <a href="https://medium.com/workerb" target="_blank" rel="noopener noreferrer"
                         onClick={ReactGA.event({ category: 'wbdocs_fl_medium', action: 'click', label: 'footer_link_click' })}>
                         <img src={require('../img/social/medium.svg')} alt='medium' />
+                    </a>
+                    <a href="https://spectrum.chat/workerb" target="_blank" rel="noopener noreferrer"
+                        onClick={ReactGA.event({ category: 'wbdocs_fl_spectrum', action: 'click', label: 'footer_link_click' })}>
+                        <img src={require('../img/social/forum.svg')} alt='spectrum' />
                     </a>
                 </div>
             </div>
