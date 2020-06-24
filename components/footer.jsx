@@ -17,9 +17,21 @@ export const Footer = () => {
                         Privacy Policy</a>
                 </div>
                 <div className="footer_children social_icons">
+                    <a href="https://spectrum.chat/workerb" target="_blank" rel="noopener noreferrer"
+                        onClick={ReactGA.event({ category: 'wbdocs_fl_spectrum', action: 'click', label: 'footer_link_click' })}>
+                        <img src={require('../img/social/spectrum.svg')} alt='spectrum' />
+                    </a>
                     <a href="https://github.com/workerb-io/" target="_blank" rel="noopener noreferrer"
                         onClick={ReactGA.event({ category: 'wbdocs_fl_github', action: 'click', label: 'footer_link_click' })}>
                         <img src={require('../img/social/github.svg')} alt='github' />
+                    </a>
+                    <a href="https://www.linkedin.com/company/workerb/" target="_blank" rel="noopener noreferrer"
+                        onClick={ReactGA.event({ category: 'wbdocs_fl_linkedin', action: 'click', label: 'footer_link_click' })}>
+                        <img src={require('../img/social/linkedin.svg')} alt='linkedin' />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCguq9sXrm-B3eF7xqRAPnzA" target="_blank" rel="noopener noreferrer"
+                        onClick={ReactGA.event({ category: 'wbdocs_fl_youtube', action: 'click', label: 'footer_link_click' })}>
+                        <img src={require('../img/social/youtube.svg')} alt='youtube' />
                     </a>
                     <a href="https://twitter.com/workerb_io" target="_blank" rel="noopener noreferrer"
                         onClick={ReactGA.event({ category: 'wbdocs_fl_twitter', action: 'click', label: 'footer_link_click' })}>
@@ -28,18 +40,6 @@ export const Footer = () => {
                     <a href="https://medium.com/workerb" target="_blank" rel="noopener noreferrer"
                         onClick={ReactGA.event({ category: 'wbdocs_fl_medium', action: 'click', label: 'footer_link_click' })}>
                         <img src={require('../img/social/medium.svg')} alt='medium' />
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCguq9sXrm-B3eF7xqRAPnzA" target="_blank" rel="noopener noreferrer"
-                        onClick={ReactGA.event({ category: 'wbdocs_fl_youtube', action: 'click', label: 'footer_link_click' })}>
-                        <img src={require('../img/social/youtube.svg')} alt='youtube' />
-                    </a>
-                    <a href="https://www.linkedin.com/company/workerb/" target="_blank" rel="noopener noreferrer"
-                        onClick={ReactGA.event({ category: 'wbdocs_fl_linkedin', action: 'click', label: 'footer_link_click' })}>
-                        <img src={require('../img/social/linkedin.svg')} alt='linkedin' />
-                    </a>
-                    <a href="https://spectrum.chat/workerb" target="_blank" rel="noopener noreferrer"
-                        onClick={ReactGA.event({ category: 'wbdocs_fl_spectrum', action: 'click', label: 'footer_link_click' })}>
-                        <img src={require('../img/social/spectrum.svg')} alt='spectrum' />
                     </a>
                 </div>
             </div>
