@@ -10,7 +10,7 @@ import WBeditor from 'wb-editor'
 In this demo, we get a list of employees and create a new one.
 
 export const wb_script_1 = `function decodeApiResponse(apiResponse){
-    var result = JSON.parse(apiResponse)
+    var result = apiResponse
     var response = JSON.parse(result.response)
  
     return response

@@ -14,6 +14,7 @@ The **runInTab** function runs the specified function in a new tab and returns t
 ##### Arguments
 
 -   **function**: A [Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function) which specifies the code that should be run in the new tab.
+-   **keepOpen**: A [boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) Keep the tab open after executing the function.
 
 <br/>
 
@@ -34,7 +35,8 @@ export const wb_script_1 = `var tabResult = runInTab(
         var tableTxt = readAll(".mw-parser-output > p")
         tableTxt = JSON.parse(tableTxt).join("\n")
         return tableTxt
-    }
+    },
+    true
 )`
 
 <WBeditor
