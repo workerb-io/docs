@@ -30,7 +30,7 @@ An object which has two properties:
 
 ##### Examples
 
-export const wb_script_1 = `httpPost('https://www.google.com', ({ 
+export const wb_script_1 = `httpPost('https://www.google.com', JSON.stringify({ 
     'name': 'workerB' 
 }), {
     'content-type': 'application/json'
