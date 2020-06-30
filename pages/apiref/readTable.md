@@ -28,7 +28,7 @@ The **readTable** function returns the content of a target table.
 
 ##### Return
 
-A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that is a stringified version of an [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) which has the following properties:
+An [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) which has the following properties:
 
 - **header**: An [array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) of [strings](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) which contains the heading for columns
 - **rows**: An [array](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status) of [objects](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) where each key corresponds to a header from the 'header' array. If column header is not identified, the key will be 'column{index}'.

@@ -30,7 +30,7 @@ The **getAttribute** function can be used to get an attribute value of a target 
 
 ##### Return
 
-A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that is a stringified version of an [array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) of [objects](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object). Each [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) corresponds to each element in the DOM that satisfied the query and it has the attribute name & values as properties for that element. 
+An [array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array) of [objects](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object). Each [object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) corresponds to each element in the DOM that satisfied the query and it has the attribute name & values as properties for that element. 
 
 <br/>
 

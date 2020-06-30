@@ -22,7 +22,7 @@ The **readAll** function returns texts of all target elements which match the qu
 
 ##### Return
 
-A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) that is stringified version of the array of values read.
+The array of values read.
 
 <br/>
 

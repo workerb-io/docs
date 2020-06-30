@@ -16,7 +16,7 @@ export const wb_script_1 = `var tabResult = runInTab(
         type("steve jobs", '#searchInput', { method: 'by_query_selector' })
         submit('#searchInput', { expectReload: true })
         var tableTxt = readAll(".mw-parser-output > p")
-        tableTxt = JSON.parse(tableTxt).join("\\n")
+        tableTxt = tableTxt.join("\\n")
         return tableTxt
     }
 )
