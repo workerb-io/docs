@@ -109,6 +109,11 @@ const INDEX_DATA = [
                 title: "prompt",
                 routeName: "/prompt",
                 children: null
+            },
+            {
+                title: "logging",
+                routeName: "/logging",
+                children: null
             }
         ]
     },
