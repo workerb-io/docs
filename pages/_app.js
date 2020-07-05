@@ -4,6 +4,7 @@ import Router from 'next/router'
 import getConfig from 'next/config'
 import PropTypes from 'prop-types';
 import ReactGA from 'react-ga'
+import { AmplitudeProvider, Amplitude, LogOnMount } from "@amplitude/react-amplitude";
 import { Row, Col, Container } from 'react-bootstrap';
 import { Navbar } from '../components/navbar'
 import { Footer } from '../components/footer'
@@ -13,11 +14,6 @@ import '../styles/main.scss'
 
 const { publicRuntimeConfig } = getConfig()
 const { GA_ID, AMPLITUDE_KEY } = publicRuntimeConfig
-import {
-    AmplitudeProvider,
-    Amplitude,
-    LogOnMount
-} from "@amplitude/react-amplitude";
 
 ReactGA.initialize(GA_ID)
 
