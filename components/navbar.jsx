@@ -1,5 +1,6 @@
 import getConfig from 'next/config'
 import React from 'react'
+import { Amplitude } from "@amplitude/react-amplitude";
 
 import PlayIcon from './svg-components/PlayIcon'
 import LibrariesIcon from './svg-components/LibrariesIcon'
@@ -8,7 +9,6 @@ import WorkerBFull from './svg-components/workerb'
 
 const { publicRuntimeConfig } = getConfig()
 const { FE_URL } = publicRuntimeConfig
-import { Amplitude } from "@amplitude/react-amplitude";
 
 export const Navbar = ({ hamburger_method }) => {
 
