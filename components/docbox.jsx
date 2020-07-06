@@ -24,7 +24,7 @@ const DocBox = ({ title, children }) => {
             <Row>
 
                 {/*track each doc page load*/}
-                <LogOnMount eventType={`docs_view : ${router.pathname}`} />
+                <LogOnMount eventType={`docs_view_${router.pathname}`} />
 
                 <Col lg={{ span: 9, offset: 1 }} md={9} xs={12} className='doc_content'>
                     <div className='md_content'>
