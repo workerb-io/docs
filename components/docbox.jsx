@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { Row, Col } from 'react-bootstrap';
 import { useRouter } from 'next/router'
 import ReactGA from 'react-ga'
+import { LogOnMount } from "@amplitude/react-amplitude";
 import SlugHelp from './slughelp';
 import FeedbackBtn from './feedbackbtn';
 
@@ -21,6 +22,10 @@ const DocBox = ({ title, children }) => {
                 <title>{title}</title>
             </Head>
             <Row>
+
+                {/*track each doc page load*/}
+                <LogOnMount eventType={`docs_view_${router.pathname}`} />
+
                 <Col lg={{ span: 9, offset: 1 }} md={9} xs={12} className='doc_content'>
                     <div className='md_content'>
                         {children}
@@ -30,6 +35,7 @@ const DocBox = ({ title, children }) => {
                     <SlugHelp />
                     <FeedbackBtn />
                 </Col>
+
             </Row>
         </React.Fragment >
     );
