@@ -24,8 +24,10 @@ const DocBox = ({ title, children }) => {
             <Row>
 
                 {/*track each doc page load*/}
-                <LogOnMount eventType={`docs_view${router.pathname.replace(/\//g, "_")}`} />
-
+                <LogOnMount eventType={`docs_view`} eventProperties={inheritedProps => ({
+					...inheritedProps,
+					source: `${router.pathname.replace(/\//g, "_")}`,
+				})}/>
                 <Col lg={{ span: 9, offset: 1 }} md={9} xs={12} className='doc_content'>
                     <div className='md_content'>
                         {children}
