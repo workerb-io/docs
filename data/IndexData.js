@@ -114,6 +114,11 @@ const INDEX_DATA = [
                 title: "logging",
                 routeName: "/logging",
                 children: null
+            },
+            {
+                title: "select",
+                routeName: "/select",
+                children: null
             }
         ]
     },
