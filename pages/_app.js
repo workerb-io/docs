@@ -55,29 +55,28 @@ function MyApp({ Component, pageProps }) {
                 <LogOnMount eventType="docs_view" />
                 <Amplitude>
                     {
-                        ({ logEvent }) =>
-                            <React.Fragment>
-                                <Head>
-                                    <title>workerB | Docs</title>
-                                    <meta
-                                        name="viewport"
-                                        content="minimum-scale=1, initial-scale=1, width=device-width"
-                                    />
-                                    <link rel="icon" href={require('../img/favicon.png')} sizes="32x32" />
-                                </Head>
-                                <Navbar hamburger_method={toggle_hamburger} />
-                                <Container fluid onClick={() => logEvent('docs_click_containerfluid_div')}>
-                                    <Row className='documentation_box'>
-                                        <Col className='sidenav_container d-none d-md-block' md={3} lg={2}>
-                                            <SideNav />
-                                        </Col>
-                                        <Col className='documentation_content' xs={12} md={9} lg={10}>
-                                            <Component className='doc_container' {...pageProps} />
-                                        </Col>
-                                    </Row>
-                                </Container>
-                                <Footer />
-                            </React.Fragment >
+                        <React.Fragment>
+                            <Head>
+                                <title>workerB | Docs</title>
+                                <meta
+                                    name="viewport"
+                                    content="minimum-scale=1, initial-scale=1, width=device-width"
+                                />
+                                <link rel="icon" href={require('../img/favicon.png')} sizes="32x32" />
+                            </Head>
+                            <Navbar hamburger_method={toggle_hamburger} />
+                            <Container fluid>
+                                <Row className='documentation_box'>
+                                    <Col className='sidenav_container d-none d-md-block' md={3} lg={2}>
+                                        <SideNav />
+                                    </Col>
+                                    <Col className='documentation_content' xs={12} md={9} lg={10}>
+                                        <Component className='doc_container' {...pageProps} />
+                                    </Col>
+                                </Row>
+                            </Container>
+                            <Footer />
+                        </React.Fragment >
                     }
                 </Amplitude>
             </Amplitude>
