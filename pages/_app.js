@@ -4,7 +4,7 @@ import Router from 'next/router'
 import getConfig from 'next/config'
 import PropTypes from 'prop-types';
 import ReactGA from 'react-ga'
-import { AmplitudeProvider, Amplitude, LogOnMount } from "@amplitude/react-amplitude";
+import { AmplitudeProvider, Amplitude } from "@amplitude/react-amplitude";
 import { Row, Col, Container } from 'react-bootstrap';
 import { Navbar } from '../components/navbar'
 import { Footer } from '../components/footer'
@@ -52,7 +52,6 @@ function MyApp({ Component, pageProps }) {
                     source: "docs",
                 })}
             >
-                <LogOnMount eventType="docs_view" />
                 <Amplitude>
                     {
                         ({ logEvent }) =>

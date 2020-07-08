@@ -15,7 +15,7 @@ export const wb_script_1 = `var search_term = args[0]
 if (!search_term) {                 // if argument is not specified, prompt the user
     search_term = prompt("What do you want to search for?")
 }
-open('https://www.google.com/search?q' + search_term)
+open('https://www.google.com/search?q=' + search_term)
 `
 
 <WBeditor

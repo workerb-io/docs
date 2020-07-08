@@ -3,7 +3,7 @@ import WBeditor from 'wb-editor'
 
 <DocBox title={'workerB | Docs/API Reference/httpDelete'}>
 
-### **getAttribute**
+### **httpDelete**
 <hr/>
 <br/>
 
