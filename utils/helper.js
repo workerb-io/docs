@@ -45,6 +45,5 @@ export const wbeditor_run_event_binder = () => {
         eventCategory: `docs_click_wb_editor:run: ${pathname}`,
         eventAction: 'click'
     });
-
-    amplitude.getInstance().logEvent(`docs_click_wb_editor:run: ${pathname}`)
+    amplitude.getInstance().logEvent(`docs_click_wb_editor:run`, { 'source': `${pathname.replace(/\//g, "_")}` })
 }
