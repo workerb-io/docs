@@ -1,4 +1,4 @@
-export const ga_anchor_binder = () => {
+export const ga_element_binder = () => {
 
     let amplitude = undefined
     if (typeof window !== 'undefined') {
@@ -18,4 +18,21 @@ export const ga_anchor_binder = () => {
             amplitude.getInstance().logEvent(`docs_a_click:${anchors[i].innerText}`)
         })
     }
+
+    // add event track for docs code select;
+    let wb_editor_instances = document.querySelectorAll('textarea.editor-text-area')
+    let doc_title = document.querySelector('.md_content>h3')
+    for (let i = 0; i < wb_editor_instances.length; i++) {
+        if (doc_title) {
+            wb_editor_instances[i].addEventListener('select', () => {
+                ga('send', {
+                    hitType: 'event',
+                    eventCategory: `docs_select:wbeditor_codeblock:${doc_title.innerText}`,
+                    eventAction: 'select'
+                });
+                amplitude.getInstance().logEvent(`docs_select:wbeditor_codeblock:${doc_title.innerText}`)
+            })
+        }
+    }
+
 }
