@@ -1,11 +1,11 @@
+
+let amplitude = undefined
+if (typeof window !== 'undefined') {
+    //resolve window not defined issue; ssr
+    amplitude = require('amplitude-js/amplitude');
+}
+
 export const ga_element_binder = () => {
-
-    let amplitude = undefined
-    if (typeof window !== 'undefined') {
-        //resolve window not defined issue; ssr
-        amplitude = require('amplitude-js/amplitude');
-    }
-
     //content anchor_tags only
     let anchors = document.querySelectorAll('.container-fluid a');
     for (let i = 0; i < anchors.length; i++) {
@@ -35,4 +35,16 @@ export const ga_element_binder = () => {
         }
     }
 
+}
+
+export const wbeditor_run_event_binder = () => {
+    let pathname = window.location.pathname
+
+    ga('send', {
+        hitType: 'event',
+        eventCategory: `docs_click_wb_editor:run: ${pathname}`,
+        eventAction: 'click'
+    });
+
+    amplitude.getInstance().logEvent(`docs_click_wb_editor:run: ${pathname}`)
 }

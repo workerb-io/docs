@@ -1,5 +1,6 @@
 import DocBox from '~/components/docbox'
 import WBeditor from 'wb-editor'
+import {wbeditor_run_event_binder} from '~/utils/helper'
 
 <DocBox title={'workerB | Docs/Demos/Bookmarks++'}>
 
@@ -22,6 +23,7 @@ open('https://www.google.com/search?q=' + search_term)
     code = {wb_script_1}
     readOnly = {true}
     showShareIcon={false}
+    runClickCallback={() => wbeditor_run_event_binder()}
 />
 
 <br/>
@@ -39,6 +41,7 @@ open('https://docs.google.com/document/u/0/?tgif=d&q=' + search_term)
     code = {wb_script_2}
     readOnly = {true}
     showShareIcon={false}
+    runClickCallback={() => wbeditor_run_event_binder()}
 />
 
 </DocBox>
