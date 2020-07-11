@@ -9,7 +9,7 @@ import { Row, Col, Container } from 'react-bootstrap';
 import { Navbar } from '../components/navbar'
 import { Footer } from '../components/footer'
 import SideNav from '../components/sidenav'
-import { ga_anchor_binder } from '../utils/helper'
+import { ga_element_binder } from '../utils/helper'
 import '../styles/main.scss'
 
 const { publicRuntimeConfig } = getConfig()
@@ -17,13 +17,13 @@ const { GA_ID, AMPLITUDE_KEY } = publicRuntimeConfig
 
 ReactGA.initialize(GA_ID)
 
-Router.events.on('routeChangeComplete', () => ga_anchor_binder())
+Router.events.on('routeChangeComplete', () => ga_element_binder())
 
 function MyApp({ Component, pageProps }) {
     useEffect(() => {
         // Remove the server-side injected CSS.
         const jssStyles = document.querySelector('#jss-server-side');
-        ga_anchor_binder();
+        ga_element_binder();
         if (jssStyles) {
             jssStyles.parentElement.removeChild(jssStyles);
         }

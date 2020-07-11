@@ -1,5 +1,6 @@
 import DocBox from '~/components/docbox'
 import WBeditor from 'wb-editor'
+import {wbeditor_run_event_binder} from '~/utils/helper'
 
 <DocBox title={'workerB | Docs/Demos/Google Search'}>
 
@@ -18,5 +19,6 @@ submit()
     code = {wb_script_1}
     readOnly = {true}
     showShareIcon={false}
+    runClickCallback={() => wbeditor_run_event_binder()}
 />
 </DocBox>
