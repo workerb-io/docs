@@ -27,10 +27,10 @@ export const ga_element_binder = () => {
             wb_editor_instances[i].addEventListener('select', () => {
                 ga('send', {
                     hitType: 'event',
-                    eventCategory: `docs_select:wbeditor_codeblock:${doc_title.innerText}`,
+                    eventCategory: `docs_wbeditor_select:${doc_title.innerText}`,
                     eventAction: 'select'
                 });
-                amplitude.getInstance().logEvent(`docs_select:wbeditor_codeblock:${doc_title.innerText}`)
+                amplitude.getInstance().logEvent(`docs_wbeditor_select`, { 'source': `${doc_title.innerText.replace(/\//g, "_")}` })
             })
         }
     }
@@ -42,8 +42,8 @@ export const wbeditor_run_event_binder = () => {
 
     ga('send', {
         hitType: 'event',
-        eventCategory: `docs_click_wb_editor:run: ${pathname}`,
+        eventCategory: `docs_wbeditor_run: ${pathname}`,
         eventAction: 'click'
     });
-    amplitude.getInstance().logEvent(`docs_click_wb_editor:run`, { 'source': `${pathname.replace(/\//g, "_")}` })
+    amplitude.getInstance().logEvent(`docs_wbeditor_run`, { 'source': `${pathname.replace(/\//g, "_")}` })
 }
