@@ -62,10 +62,10 @@ export const Footer = () => {
                                     }}>
                                     <img src={require('../img/social/medium.svg')} alt='medium' />
                                 </a>
-                                <a href="https://spectrum.chat/workerb" target="_blank" rel="noopener noreferrer"
+                                <a href="https://discuss.workerb.io" target="_blank" rel="noopener noreferrer"
                                     onClick={() => {
-                                        ReactGA.event({ category: 'docs_click_footer_spectrum', action: 'click', label: 'docs_footer_link_click' })
-                                        logEvent('docs_click_footer_spectrum')
+                                        ReactGA.event({ category: 'docs_click_footer_discuss', action: 'click', label: 'docs_footer_link_click' })
+                                        logEvent('docs_click_footer_discuss')
                                     }}>
                                     <img src={require('../img/social/forum.svg')} alt='spectrum' />
                                 </a>
