@@ -67,10 +67,10 @@ export const Navbar = ({ hamburger_method }) => {
                                     logEvent('mob_docs_click_header_playground')
                                     ReactGA.event({ category: 'mob_docs_click_header_playground', action: 'click', label: 'docs_header_link_click' })
                                 }}>Play</a>
-                                <a href={FE_URL + "libraries"} onClick={() => {
-                                    ReactGA.event({ category: 'mob_docs_click_header_libraries', action: 'click', label: 'docs_header_link_click' })
-                                    logEvent('mob_docs_click_header_libraries')
-                                }}>Libraries</a>
+                                <a href={FE_URL + "packages"} onClick={() => {
+                                    ReactGA.event({ category: 'mob_docs_click_header_packages', action: 'click', label: 'docs_header_link_click' })
+                                    logEvent('mob_docs_click_header_packages')
+                                }}>Packages</a>
                                 <a href={FE_URL + "login"} onClick={() => {
                                     ReactGA.event({ category: 'mob_docs_click_header_login', action: 'click', label: 'docs_header_link_click' })
                                     logEvent('mob_docs_click_header_login')
