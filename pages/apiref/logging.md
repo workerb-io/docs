@@ -25,7 +25,7 @@ The **logging** function is used to enable and disable debug messages logging.
 
 ##### Examples
 
-export const wb_script_1 = `log('on')
+export const wb_script_1 = `logging('on')
 click('New repository', { expectReload: true })
 logging("off")`
 
