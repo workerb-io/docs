@@ -6,6 +6,7 @@ import { Amplitude } from "@amplitude/react-amplitude";
 import PlayIcon from './svg-components/PlayIcon'
 import PackagesIcon from './svg-components/PackagesIcon'
 import LoginIcon from './svg-components/LoginIcon'
+import SignupIcon from './svg-components/SignupIcon'
 import WorkerBFull from './svg-components/workerb'
 
 const { publicRuntimeConfig } = getConfig()
@@ -70,7 +71,7 @@ export const Navbar = ({ hamburger_method }) => {
                                     <span className="login-icon">
                                         <PlayIcon />
                                     </span>
-                                    <span className="login-text">Play</span>
+                                    <span className="login-text">Playground</span>
                                 </a>
                                 <a href={FE_URL + "packages"} onClick={() => {
                                     ReactGA.event({ category: 'mob_docs_click_header_packages', action: 'click', label: 'docs_header_link_click' })
@@ -89,6 +90,15 @@ export const Navbar = ({ hamburger_method }) => {
                                         <LoginIcon />
                                     </span>
                                     <span className="login-text">login</span>
+                                </a>
+                                <a href={FE_URL + "signup"} onClick={() => {
+                                    ReactGA.event({ category: 'mob_docs_click_header_signup', action: 'click', label: 'docs_header_link_click' })
+                                    logEvent('mob_docs_click_header_signup')
+                                }}>
+                                    <span className="login-icon">
+                                        <SignupIcon />
+                                    </span>
+                                    <span className="login-text">Signup</span>
                                 </a>
                             </div>
                         </span>
