@@ -98,7 +98,7 @@ export const Navbar = ({ hamburger_method }) => {
                                     <span className="login-icon">
                                         <SignupIcon />
                                     </span>
-                                    <span className="login-text">Signup</span>
+                                    <span className="login-text">Sign-up</span>
                                 </a>
                             </div>
                         </span>
