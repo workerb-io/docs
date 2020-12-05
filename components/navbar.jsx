@@ -29,7 +29,7 @@ export const Navbar = ({ hamburger_method }) => {
                         </div>
 
                         <span className="buttons-group">
-                            <a className="login-group" href="https://play.workerb.io/" rel="noreferrer" onClick={() => {
+                            <a className="login-group" href="https://play.workerb.app/" rel="noreferrer" onClick={() => {
                                 ReactGA.event({ category: 'docs_click_header_play', action: 'click', label: 'docs_header_link_click' })
                                 logEvent('docs_click_header_play')
                             }}>
@@ -63,7 +63,7 @@ export const Navbar = ({ hamburger_method }) => {
                         <span className='right_dropdown'>
                             <img className='right_dropdown_trigger' src={require('../img/dropdown_options.svg')} />
                             <div className='right_dropdown_content'>
-                                <a href='https://play.workerb.io/' onClick={() => {
+                                <a href='https://play.workerb.app/' onClick={() => {
                                     logEvent('mob_docs_click_header_playground')
                                     ReactGA.event({ category: 'mob_docs_click_header_playground', action: 'click', label: 'docs_header_link_click' })
                                 }}>Play</a>
