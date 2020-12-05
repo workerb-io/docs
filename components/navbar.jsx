@@ -4,8 +4,9 @@ import ReactGA from 'react-ga'
 import { Amplitude } from "@amplitude/react-amplitude";
 
 import PlayIcon from './svg-components/PlayIcon'
-import LibrariesIcon from './svg-components/LibrariesIcon'
+import PackagesIcon from './svg-components/PackagesIcon'
 import LoginIcon from './svg-components/LoginIcon'
+import SignupIcon from './svg-components/SignupIcon'
 import WorkerBFull from './svg-components/workerb'
 
 const { publicRuntimeConfig } = getConfig()
@@ -38,15 +39,15 @@ export const Navbar = ({ hamburger_method }) => {
                                 </span>
                                 <span className="login-text">Playground</span>
                             </a>
-                            <a className="login-group" href={FE_URL + "libraries"} rel="noreferrer" onClick={() => {
-                                ReactGA.event({ category: 'docs_click_header_libraries', action: 'click', label: 'docs_header_link_click' })
-                                logEvent('docs_click_header_libraries')
+                            <a className="login-group" href={FE_URL + "packages"} rel="noreferrer" onClick={() => {
+                                ReactGA.event({ category: 'docs_click_header_packages', action: 'click', label: 'docs_header_link_click' })
+                                logEvent('docs_click_header_packages')
                             }}>
                                 <span className="login-button">
-                                    <LibrariesIcon />
+                                    <PackagesIcon />
                                 </span>
 
-                                <span className="login-text">Libraries</span>
+                                <span className="login-text">Packages</span>
                             </a>
 
                             <a className="login-group" href={FE_URL + "login"} rel="noreferrer" onClick={() => {
@@ -66,15 +67,39 @@ export const Navbar = ({ hamburger_method }) => {
                                 <a href='https://play.workerb.app/' onClick={() => {
                                     logEvent('mob_docs_click_header_playground')
                                     ReactGA.event({ category: 'mob_docs_click_header_playground', action: 'click', label: 'docs_header_link_click' })
-                                }}>Play</a>
-                                <a href={FE_URL + "libraries"} onClick={() => {
-                                    ReactGA.event({ category: 'mob_docs_click_header_libraries', action: 'click', label: 'docs_header_link_click' })
-                                    logEvent('mob_docs_click_header_libraries')
-                                }}>Libraries</a>
+                                }}>
+                                    <span className="login-icon">
+                                        <PlayIcon />
+                                    </span>
+                                    <span className="login-text">Playground</span>
+                                </a>
+                                <a href={FE_URL + "packages"} onClick={() => {
+                                    ReactGA.event({ category: 'mob_docs_click_header_packages', action: 'click', label: 'docs_header_link_click' })
+                                    logEvent('mob_docs_click_header_packages')
+                                }}>
+                                    <span className="login-icon">
+                                        <PackagesIcon />
+                                    </span>
+                                    <span className="login-text">Packages</span>
+                                </a>
                                 <a href={FE_URL + "login"} onClick={() => {
                                     ReactGA.event({ category: 'mob_docs_click_header_login', action: 'click', label: 'docs_header_link_click' })
                                     logEvent('mob_docs_click_header_login')
-                                }}>Login</a>
+                                }}>
+                                    <span className="login-icon">
+                                        <LoginIcon />
+                                    </span>
+                                    <span className="login-text">Login</span>
+                                </a>
+                                <a href={FE_URL + "signup"} onClick={() => {
+                                    ReactGA.event({ category: 'mob_docs_click_header_signup', action: 'click', label: 'docs_header_link_click' })
+                                    logEvent('mob_docs_click_header_signup')
+                                }}>
+                                    <span className="login-icon">
+                                        <SignupIcon />
+                                    </span>
+                                    <span className="login-text">Sign-up</span>
+                                </a>
                             </div>
                         </span>
                     </div>

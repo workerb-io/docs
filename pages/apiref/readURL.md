@@ -25,7 +25,7 @@ A [string](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Ob
 
 ##### Examples
 
-export const wb_script_1 = `val url = readUrl()`
+export const wb_script_1 = `val url = readURL()`
 
 <WBeditor
     code = {wb_script_1}
