@@ -25,7 +25,7 @@ The **open** function opens a link in the same browser window.
 
 ##### Examples
 
-export const wb_script_1 = `open('https://workerb.io/')`
+export const wb_script_1 = `open('https://workerb.app/')`
 
 <WBeditor
     code = {wb_script_1}

@@ -25,7 +25,7 @@ The **tab** function opens a link in a new tab in the browser.
 
 ##### Examples
 
-export const wb_script_1 = `tab('https://workerb.io/')`
+export const wb_script_1 = `tab('https://workerb.app/')`
 
 <WBeditor
     code = {wb_script_1}

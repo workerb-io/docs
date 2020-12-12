@@ -21,7 +21,7 @@ export const Navbar = ({ hamburger_method }) => {
                     <div className="navbar">
                         <button className="menu_toggle" onClick={hamburger_method}>Menu</button>
                         <div className="logo">
-                            <a href="https://workerb.io" onClick={() => {
+                            <a href="https://workerb.app" onClick={() => {
                                 ReactGA.event({ category: 'docs_click_header_www', action: 'click', label: 'docs_header_link_click' })
                                 logEvent('docs_click_header_www')
                             }}>

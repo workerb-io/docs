@@ -13,13 +13,13 @@ export const Footer = () => {
                                 <span>© 2020 workerB. All rights reserved.</span>
                             </div>
                             <div className="footer_children tnc">
-                                <a href="https://workerb.io/terms_and_conditions.html"
+                                <a href="https://workerb.app/terms_and_conditions.html"
                                     onClick={() => {
                                         ReactGA.event({ category: 'docs_click_footer_term_cond', action: 'click', label: 'docs_footer_link_click' })
                                         logEvent('docs_click_footer_term_cond')
                                     }}>
                                     Terms &amp; Condition</a>
-                                <a href="https://workerb.io/privacy_policy.html"
+                                <a href="https://workerb.app/privacy_policy.html"
                                     onClick={() => {
                                         ReactGA.event({ category: 'docs_click_footer_privacypol', action: 'click', label: 'docs_footer_link_click' })
                                         logEvent('docs_click_footer_privacypol')
