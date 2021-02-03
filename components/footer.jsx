@@ -27,12 +27,12 @@ export const Footer = () => {
                                     Privacy Policy</a>
                             </div>
                             <div className="footer_children social_icons">
-                                <a href="https://discuss.workerb.io" target="_blank" rel="noopener noreferrer"
+                                <a href="https://slack.workerb.app" target="_blank" rel="noopener noreferrer"
                                     onClick={() => {
                                         ReactGA.event({ category: 'docs_click_footer_discuss', action: 'click', label: 'docs_footer_link_click' })
                                         logEvent('docs_click_footer_discuss')
                                     }}>
-                                    <img src={require('../img/social/forum.svg')} alt='forum' />
+                                    <img src={require('../img/social/slack.svg')} alt='forum' />
                                 </a>
                                 <a href="https://github.com/workerb-io/" target="_blank" rel="noopener noreferrer"
                                     onClick={() => {

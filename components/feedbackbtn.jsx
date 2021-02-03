@@ -31,7 +31,7 @@ const FeedbackBtn = () => {
         <div className="feedback_buttons">
             <a id='edit_page_fb_btn' target='_blank' href='#'>Edit Page</a>
             <a id='report_fb_btn' target='_blank' href='#'>Report Issue</a>
-            <a id='getHelp' target='_blank' href='https://discuss.workerb.io'>Get Help</a>
+            <a id='getHelp' target='_blank' href='https://slack.workerb.app'>Join workerB Slack</a>
         </div>
     )
 }
