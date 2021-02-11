@@ -12,7 +12,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-		"@amplitude/react-amplitude": "^1.0.0",
+    "@amplitude/react-amplitude": "^1.0.0",
     "@mdx-js/loader": "^1.5.8",
     "@next/mdx": "^9.3.4",
     "@zeit/next-sass": "^1.0.1",
@@ -21,7 +21,6 @@
     "bootstrap": "^4.4.1",
     "next": "^9.3.4",
     "next-images": "^1.4.0",
-    "node-sass": "^4.13.1",
     "prismjs": "^1.21.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",

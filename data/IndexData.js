@@ -159,6 +159,18 @@ const INDEX_DATA = [
             },
         ]
     },
+    {
+        id: 4,
+        title: 'Create Package',
+        routeName: '/create-package',
+        children: [
+            {
+                title: "Get Started",
+                routeName: "/getStarted",
+                children: null
+            }
+        ]
+    }
 ];
 
 module.exports = INDEX_DATA
