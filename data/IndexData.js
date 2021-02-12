@@ -161,8 +161,8 @@ const INDEX_DATA = [
     },
     {
         id: 4,
-        title: 'Create Package',
-        routeName: '/create-package',
+        title: 'How Tos',
+        routeName: '/how-tos',
         children: [
             {
                 title: "Get Started",
