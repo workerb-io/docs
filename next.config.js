@@ -20,7 +20,7 @@ const withMDX = require('@next/mdx')({
 
 module.exports = withImages(
     withMDX({
-        exportTrailingSlash: true,
+        trailingSlash: true,
         exportPathMap: () => {
             return routes
         },
