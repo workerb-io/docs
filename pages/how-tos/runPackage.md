@@ -1,6 +1,8 @@
 import DocBox from '~/components/docbox'
 import Link from 'next/link'
-import Image from 'next/image'
+import ExtPerm from '~/public/images/extension_permission.png'
+import LoadDir from '~/public/images/loadDir.png'
+import DistActionBar from '~/public/images/action_bar_dist.png'
 
 <DocBox title={'workerB | Docs/ Create Package/ Get Started'}>
 
@@ -30,8 +32,8 @@ By this time you've built the default package and now you can start running it o
 
 _Here's the screenshot for this_
 
-<Image 
-src="/images/extension_permission.png"
+<img 
+src={ExtPerm}
 alt="Extension Permission"
 height={80}
 width={650}
@@ -47,8 +49,8 @@ _for windows, it looks like this `file:///D:/Path/wb-package/dist/`_
 
 - In the Workerb Action Bar run the `loadDir` command and paste your dist folder path to load your local package:
 
-<Image 
-src="/images/loadDir.png"
+<img 
+src={LoadDir}
 alt="Load dist directory"
 height={40}
 width={400}
@@ -56,8 +58,8 @@ width={400}
 
 - After successfully loading your dist folder you will able to see the dist command as autosuggestion in Workerb Action Bar.
 
-<Image
-src="/images/action_bar_dist.png"
+<img
+src={DistActionBar}
 alt="Dist in action bar"
 height={80}
 width={350}

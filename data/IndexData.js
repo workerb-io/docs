@@ -181,13 +181,7 @@ const INDEX_DATA = [
             {
                 title: "Run Package",
                 routeName: "/runPackage",
-                children: [
-                    {
-                        title: "Nested",
-                        routeName: "/nested",
-                        children: null
-                    }
-                ]
+                children: null
             }
         ]
     }

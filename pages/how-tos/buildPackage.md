@@ -1,6 +1,7 @@
 import DocBox from '~/components/docbox'
 import Link from 'next/link'
-import Image from 'next/image'
+import InitDirStruc from '~/public/images/initial_dir_structure.png'
+import PostDirStruc from '~/public/images/dist_structure.png'
 
 <DocBox title={'workerB | Docs/ Create Package/ Get Started'}>
 
@@ -13,8 +14,8 @@ In this tutorial, we'll show you how to build the default package created using 
 
 By this time you already have a project structure with initial boilerplate code and the project structure you will be seeing something similar to this:
 
-<Image
-src="/images/initial_dir_structure.png"
+<img
+src={InitDirStruc}
 alt="Initial Directory Structure"
 height={280}
 width={150}
@@ -32,8 +33,8 @@ _# or_
 
 After building the package the directory structure will now have a dist folder like this:
 
-<Image
-src="/images/dist_structure.png"
+<img
+src={PostDirStruc}
 alt="Directory Structure after build"
 height={295}
 width={150}
