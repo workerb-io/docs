@@ -3,12 +3,14 @@ const INDEX_DATA = [
         id: 1,
         title: 'Introduction',
         routeName: '/',
+        showSorted: true,
         children: null
     },
     {
         id: 2,
         title: 'API Reference',
         routeName: '/apiref',
+        showSorted: true,
         children: [
             {
                 title: "click",
@@ -131,6 +133,7 @@ const INDEX_DATA = [
         id: 3,
         title: 'Demos',
         routeName: '/demos',
+        showSorted: true,
         children: [
             {
                 title: "Google Search",
@@ -163,11 +166,28 @@ const INDEX_DATA = [
         id: 4,
         title: 'How Tos',
         routeName: '/how-tos',
+        showSorted: false,
         children: [
             {
                 title: "Get Started",
                 routeName: "/getStarted",
                 children: null
+            },
+            {
+                title: "Build Package",
+                routeName: "/buildPackage",
+                children: null
+            },
+            {
+                title: "Run Package",
+                routeName: "/runPackage",
+                children: [
+                    {
+                        title: "Nested",
+                        routeName: "/nested",
+                        children: null
+                    }
+                ]
             }
         ]
     }

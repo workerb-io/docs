@@ -9,7 +9,7 @@ const routes = routeHandler(IndexData);
 const withMDX = require('@next/mdx')({
     extension: /\.mdx?$/,
     options: {
-        hastPlugins: [
+        rehypePlugins: [
             rehypePrism
         ],
         remarkPlugins: [
