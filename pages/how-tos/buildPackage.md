@@ -1,7 +1,7 @@
 import DocBox from '~/components/docbox'
 import Link from 'next/link'
-import InitDirStruc from '~/public/images/initial_dir_structure.png'
-import PostDirStruc from '~/public/images/dist_structure.png'
+import InitDirStruc from './images/initial_dir_structure.png'
+import PostDirStruc from './images/dist_structure.png'
 
 <DocBox title={'workerB | Docs/ Create Package/ Get Started'}>
 

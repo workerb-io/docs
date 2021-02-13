@@ -1,8 +1,8 @@
 import DocBox from '~/components/docbox'
 import Link from 'next/link'
-import ExtPerm from '~/public/images/extension_permission.png'
-import LoadDir from '~/public/images/loadDir.png'
-import DistActionBar from '~/public/images/action_bar_dist.png'
+import ExtPerm from './images/extension_permission.png'
+import LoadDir from './images/loadDir.png'
+import DistActionBar from './images/action_bar_dist.png'
 
 <DocBox title={'workerB | Docs/ Create Package/ Get Started'}>
 
