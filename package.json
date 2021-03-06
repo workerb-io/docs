@@ -21,7 +21,12 @@
     "bootstrap": "^4.4.1",
     "next": "^10.0.6",
     "next-images": "^1.4.0",
+<<<<<<< HEAD
     "prismjs": "^1.21.0",
+=======
+    "node-sass": "^4.13.1",
+    "prismjs": "^1.23.0",
+>>>>>>> master
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
