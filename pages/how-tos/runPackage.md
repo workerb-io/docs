@@ -67,6 +67,8 @@ width={350}
 
 - On selecting the dist, you will be able to see all other actions in the default package
 
-- Now, you can start adding actions in your package and test
+- Now, you can start adding actions in your package and test.
+
+Before you can start adding actions to your package you must know what is an action and you need to be familiar with the codebase. Let's <Link href="/how-tos/deepDive">dive deeper into the folder structure</Link> and see how the magic happens.
 
 </DocBox>

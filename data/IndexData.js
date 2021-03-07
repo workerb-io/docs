@@ -182,7 +182,12 @@ const INDEX_DATA = [
                 title: "Run Package",
                 routeName: "/runPackage",
                 children: null
-            }
+            },
+            {
+                title: "Deep Dive",
+                routeName: "/deepDive",
+                children: null
+            },
         ]
     }
 ];
