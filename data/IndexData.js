@@ -183,9 +183,17 @@ const INDEX_DATA = [
                 routeName: "/runPackage",
                 children: null
             },
+        ]
+    },
+    {
+        id: 5,
+        title: 'Developer Guide',
+        routeName: '/developerGuide',
+        showSorted: false,
+        children: [
             {
-                title: "Deep Dive",
-                routeName: "/deepDive",
+                title: "WorkerB Ecosystem",
+                routeName: "/workerBEcosystem",
                 children: null
             },
         ]

@@ -69,6 +69,6 @@ width={350}
 
 - Now, you can start adding actions in your package and test.
 
-Before you can start adding actions to your package you must know what is an action and you need to be familiar with the codebase. Let's <Link href="/how-tos/deepDive">dive deeper into the folder structure</Link> and see how the magic happens.
+Before you can start adding actions to your package you must know what is an action and you need to be familiar with the codebase. Let's read through the <Link href="/developerGuide">Developer Guide</Link> and see how the magic happens.
 
 </DocBox>
