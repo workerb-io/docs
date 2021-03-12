@@ -39,7 +39,7 @@ Now you may ask, how to create an action?
 Each action is a bunch of instructions. They are more like predefined scripts which will be executed by the extension if you choose to run them.
 
 For creating an action you have choose a folder where you want to add that action. If you want to add the action to the top level, you have to create that `<action_name>.ts` file under `src/actions` folder.
-If you want to place your action in some other level you can do that inside anyfolder that is child of `src/actions`. 
+If you want to place your action in some other level you can do that inside anyfolder that is child of `src/actions`.
 
 
 </DocBox>

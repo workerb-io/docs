@@ -196,6 +196,26 @@ const INDEX_DATA = [
                 routeName: "/workerBEcosystem",
                 children: null
             },
+            {
+                title: "Actions",
+                routeName: "/actions",
+                children: null
+            },
+            {
+                title: "Options",
+                routeName: "/options",
+                children: null
+            },
+            {
+                title: "Add Folder Description",
+                routeName: "/addFolderDescription",
+                children: null
+            },
+            {
+                title: "Run Pakcage During Development",
+                routeName: "/runPackageDuringDevelopment",
+                children: null
+            },
         ]
     }
 ];
