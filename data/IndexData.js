@@ -207,13 +207,18 @@ const INDEX_DATA = [
                 children: null
             },
             {
-                title: "Add Folder Description",
-                routeName: "/addFolderDescription",
+                title: "Add Package Description",
+                routeName: "/addPackageDescription",
                 children: null
             },
             {
-                title: "Run Pakcage During Development",
+                title: "Run Pakcage",
                 routeName: "/runPackageDuringDevelopment",
+                children: null
+            },
+            {
+                title: "Add Folders",
+                routeName: "/addFolders",
                 children: null
             },
         ]
