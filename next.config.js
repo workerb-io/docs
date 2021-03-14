@@ -9,7 +9,7 @@ const routes = routeHandler(IndexData);
 const withMDX = require('@next/mdx')({
     extension: /\.mdx?$/,
     options: {
-        hastPlugins: [
+        rehypePlugins: [
             rehypePrism
         ],
         remarkPlugins: [
@@ -20,7 +20,7 @@ const withMDX = require('@next/mdx')({
 
 module.exports = withImages(
     withMDX({
-        exportTrailingSlash: true,
+        trailingSlash: true,
         exportPathMap: () => {
             return routes
         },

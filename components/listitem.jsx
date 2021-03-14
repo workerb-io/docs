@@ -41,17 +41,6 @@ export const ListItem = ({ title, routeName, children }) => {
                             .length > 1 ? '' : 'collapsed')
                     }>
                         {children
-                            .sort((a, b) => {
-                                let titleA = a.title;
-                                let titleB = b.title;
-                                if (titleA < titleB) {
-                                    return -1;
-                                }
-                                if (titleA > titleB) {
-                                    return 1;
-                                }
-                                return 0;
-                            })
                             .map((e, i) =>
                                 <Link key={i} href={`${routeName}` + `${e.routeName}`}>
                                     <li

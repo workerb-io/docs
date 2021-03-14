@@ -7,6 +7,6 @@ import DocBox from '~/components/docbox'
 <hr/>
 <br/>
 
-This section contains various demos of how the workerB API could be used to interact with a website. 
+This section contains demos of workerB API and how it can be used to interact with a website.
 
 </DocBox>

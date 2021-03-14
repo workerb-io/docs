@@ -3,12 +3,14 @@ const INDEX_DATA = [
         id: 1,
         title: 'Introduction',
         routeName: '/',
+        showSorted: true,
         children: null
     },
     {
         id: 2,
         title: 'API Reference',
         routeName: '/apiref',
+        showSorted: true,
         children: [
             {
                 title: "click",
@@ -131,6 +133,7 @@ const INDEX_DATA = [
         id: 3,
         title: 'Demos',
         routeName: '/demos',
+        showSorted: true,
         children: [
             {
                 title: "Google Search",
@@ -159,6 +162,67 @@ const INDEX_DATA = [
             },
         ]
     },
+    {
+        id: 4,
+        title: 'How Tos',
+        routeName: '/how-tos',
+        showSorted: false,
+        children: [
+            {
+                title: "Get Started",
+                routeName: "/getStarted",
+                children: null
+            },
+            {
+                title: "Build Package",
+                routeName: "/buildPackage",
+                children: null
+            },
+            {
+                title: "Run Package",
+                routeName: "/runPackage",
+                children: null
+            },
+        ]
+    },
+    {
+        id: 5,
+        title: 'Developer Guide',
+        routeName: '/developerGuide',
+        showSorted: false,
+        children: [
+            {
+                title: "WorkerB Ecosystem",
+                routeName: "/workerBEcosystem",
+                children: null
+            },
+            {
+                title: "Actions",
+                routeName: "/actions",
+                children: null
+            },
+            {
+                title: "Options",
+                routeName: "/options",
+                children: null
+            },
+            {
+                title: "Add Package Description",
+                routeName: "/addPackageDescription",
+                children: null
+            },
+            {
+                title: "Run Pakcage",
+                routeName: "/runPackageDuringDevelopment",
+                children: null
+            },
+            {
+                title: "Add Folders",
+                routeName: "/addFolders",
+                children: null
+            },
+        ]
+    }
 ];
 
 module.exports = INDEX_DATA
